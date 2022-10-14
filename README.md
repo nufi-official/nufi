@@ -1,11 +1,15 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/4980147/195957121-a23e667c-1acc-431c-951e-d752d42db594.png" /></p>
   <p align="center">
-    A Web3 crypto wallet for Cardano, Flow and Solana.
+    <i>A Web3 crypto wallet for Cardano, Flow and Solana.</i>
+    <br />
     <br />
     <a href="https://chrome.google.com/webstore/detail/nufi/gpnihlnnodeiiaakbikldcihojploeca"><strong>Download extension</strong></a>
-    <br />
-    <a href="https://nu.fi/"><strong>Visit web app</strong></a>
+    ·
+    <a href="https://nu.fi">Visit web app</a>
+    ·
+    <a href="https://support.nu.fi/support/home">Knowledge base</a>
+
   </p>
 </p>
 
