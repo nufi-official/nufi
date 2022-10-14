@@ -9,7 +9,7 @@
   </p>
 </p>
 
-This repository provides technical documentation relevant especially for Dapp developers wanting to integrate with NuFi.
+This repository provides technical information relevant especially for Dapp developers wanting to integrate with NuFi.
 
 ## Testnet extension
 
