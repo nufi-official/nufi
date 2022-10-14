@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/4980147/195955040-181cffc8-8a98-490c-b01d-0c9c8497734a.svg" /></p>
+  <img src="https://user-images.githubusercontent.com/4980147/195957121-a23e667c-1acc-431c-951e-d752d42db594.png" /></p>
   <p align="center">
     A Web3 crypto wallet for Cardano, Flow and Solana.
     <br />
