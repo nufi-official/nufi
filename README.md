@@ -15,7 +15,7 @@ This repository provides technical information relevant especially for Dapp deve
 
 NuFi extension/web currently doesn't allow switching between mainnet/testnet. The extension available on Chrome webstore is mainnet. To test your dapp on testnet, you can download the latest testnet build of the extension [here](https://assets.nu.fi/extension/testnet/nufi-cwe-testnet-latest.zip)
 
-## Dapp connector
+## Dapp connectors
 
 NuFi offers several Dapp connectors allowing it to interact with Dapps across multiple blockchains. Below are instructions/resources clarifying how to integrate them.
 
