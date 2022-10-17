@@ -17,7 +17,7 @@ This repository provides documentation/resources for Dapp developers wanting to 
 
 ## Testnet extension
 
-NuFi extension/web currently doesn't allow switching between mainnet/testnet. The extension available on Chrome webstore is mainnet. To test your dapp on testnet, you can download the latest testnet build of the extension [here](https://assets.nu.fi/extension/testnet/nufi-cwe-testnet-latest.zip)
+NuFi extension/web currently doesn't allow switching between mainnet/testnet. The extension available on Chrome webstore is configured for mainnet. To test your dapp on testnet, you can download the latest testnet build of the extension [here](https://assets.nu.fi/extension/testnet/nufi-cwe-testnet-latest.zip)
 
 ## Dapp connectors
 
