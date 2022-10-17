@@ -13,7 +13,7 @@
   </p>
 </p>
 
-This repository provides technical information relevant especially for Dapp developers wanting to integrate with NuFi.
+This repository provides documentation/resources for Dapp developers wanting to integrate with NuFi.
 
 ## Testnet extension
 
@@ -33,4 +33,8 @@ NuFi's Solana connector can be integrated through the official solana-labs [wall
 
 ### Flow
 
-NuFi works with the official [fcl-js](https://github.com/onflow/fcl-js) SDK and is fully integrated with the [fcl-discovery](https://github.com/onflow/fcl-discovery) service. If you want to integrate NuFi directly, the parameters needed for that can be found [here](https://github.com/onflow/fcl-discovery/blob/812bff5b90343976835d17bc2d7810aac62d714d/data/services.json#L74). 
+NuFi works with the official [fcl-js](https://github.com/onflow/fcl-js) SDK and is fully integrated with the [fcl-discovery](https://github.com/onflow/fcl-discovery) service. If you want to integrate NuFi directly, the parameters needed for that can be found [here](https://github.com/onflow/fcl-discovery/blob/812bff5b90343976835d17bc2d7810aac62d714d/data/services.json#L74).
+
+## Branding guidelines
+
+Download [here](https://assets.nu.fi/brand.zip)
