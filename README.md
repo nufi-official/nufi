@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/4980147/195957121-a23e667c-1acc-431c-951e-d752d42db594.png" /></p>
+  <img src="https://user-images.githubusercontent.com/4980147/196724563-43b703ed-461e-4759-9e09-12f023debfa3.png" /></p>
   <p align="center">
     <i>A Web3 crypto wallet for Cardano, Flow and Solana.</i>
     <br />
     <br />
     <a href="https://chrome.google.com/webstore/detail/nufi/gpnihlnnodeiiaakbikldcihojploeca"><strong>Download extension</strong></a>
     ·
-    <a href="https://nu.fi">Visit web app</a>
+    <a href="https://nu.fi">Visit web</a>
     ·
     <a href="https://support.nu.fi/support/home">Knowledge base</a>
 
@@ -38,3 +38,9 @@ NuFi works with the official [fcl-js](https://github.com/onflow/fcl-js) SDK and 
 ## Branding guidelines
 
 Download [here](https://assets.nu.fi/brand.zip)
+
+## Support
+
+You can contact us by creating a new support ticket [here](https://support.nu.fi/support/tickets/new)
+
+
