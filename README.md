@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/4980147/196724563-43b703ed-461e-4759-9e09-12f023debfa3.png" /></p>
   <p align="center">
-    <i>A Web3 crypto wallet for Cardano, Ethereum, Flow and Solana.</i>
+    <i>A Web3 crypto wallet for Cardano, Ethereum, Flow, Solana and Milkomeda C1.</i>
     <br />
     <br />
     <a href="https://chrome.google.com/webstore/detail/nufi/gpnihlnnodeiiaakbikldcihojploeca"><strong>Download extension</strong></a>
