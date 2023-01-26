@@ -29,9 +29,13 @@ NuFi offers several DApp connectors allowing it to interact with DApps across mu
 
 NuFi's Cardano connector implements the [CIP-30](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030) standard and the API should behave the same as Flint wallet's CIP-30 connector, except it's injected as `window.cardano.nufi`. More info at https://www.cardano-caniuse.io
 
-### Ethereum
+### Ethereum / Milkomeda C1
 
-NuFi's Ethereum connector implements Metamask's API documented here: https://docs.metamask.io/guide/ethereum-provider.html#methods. Note that NuFi will not inject its API if it detects Metamask or other wallet injecting into the `window.ethereum` object, to avoid interference with these wallets. Therefore, in order to use NuFi's Ethereum connector you need to make sure that there are no other active ethereum wallet extensions (i.e. they must be disabled/uninstalled). 
+NuFi's Ethereum connector implements Metamask's API documented here: https://docs.metamask.io/guide/ethereum-provider.html#methods. Note that NuFi will not inject its API if it detects Metamask or other wallet injecting into the `window.ethereum` object, to avoid interference with these wallets. Therefore, in order to use NuFi's Ethereum connector you need to make sure that there are no other active ethereum wallet extensions (i.e. they must be disabled/uninstalled).
+
+EVM chains currently supported by NuFi's connector:
+* Etherem
+* Milkomeda C1
 
 ### Solana
 
