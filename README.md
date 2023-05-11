@@ -31,7 +31,12 @@ NuFi's Cardano connector implements the [CIP-30](https://github.com/cardano-foun
 
 ### Ethereum / Milkomeda C1
 
-NuFi's Ethereum connector implements Metamask's API documented here: https://docs.metamask.io/guide/ethereum-provider.html#methods. Note that NuFi will not inject its API if it detects Metamask or other wallet injecting into the `window.ethereum` object, to avoid interference with these wallets. Therefore, in order to use NuFi's Ethereum connector you need to make sure that there are no other active ethereum wallet extensions (i.e. they must be disabled/uninstalled).
+NuFi's Ethereum connector implements Metamask's API documented here: https://docs.metamask.io/guide/ethereum-provider.html#methods.
+When integrating NuFi we suggest following the [eip-5749](https://eips.ethereum.org/EIPS/eip-5749) standard and load NuFi from `window.evmproviders`.
+
+#### Legacy `window.ethereum` injection
+NuFi still offers legacy support and also tries to inject itself into `window.ethereum`, but we discourage using this approach and rather move to eip-5749 proposal.
+Note that in that case NuFi will not inject its API if it detects Metamask or other wallet injecting into the `window.ethereum` object, to avoid interference with these wallets. Therefore, in order to use NuFi's Ethereum connector you need to make sure that there are no other active ethereum wallet extensions (i.e. they must be disabled/uninstalled).
 
 EVM chains currently supported by NuFi's connector:
 * Etherem
