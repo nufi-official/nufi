@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/4980147/196724563-43b703ed-461e-4759-9e09-12f023debfa3.png" /></p>
   <p align="center">
-    <i>A Web3 crypto wallet for Cardano, Ethereum, Flow, Solana and Milkomeda C1.</i>
+    <i>A Web3 crypto wallet for Cardano, Ethereum, Flow, Solana, Milkomeda C1 and Polygon.</i>
     <br />
     <br />
     <a href="https://chrome.google.com/webstore/detail/nufi/gpnihlnnodeiiaakbikldcihojploeca"><strong>Download extension</strong></a>
@@ -29,7 +29,7 @@ NuFi offers several DApp connectors allowing it to interact with DApps across mu
 
 NuFi's Cardano connector implements the [CIP-30](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030) standard and the API should behave the same as Flint wallet's CIP-30 connector, except it's injected as `window.cardano.nufi`. More info at https://www.cardano-caniuse.io
 
-### Ethereum / Milkomeda C1
+### Ethereum / Milkomeda C1 / Polygon
 
 NuFi's Ethereum connector implements Metamask's API documented here: https://docs.metamask.io/guide/ethereum-provider.html#methods.
 When integrating NuFi we suggest following the [eip-5749](https://eips.ethereum.org/EIPS/eip-5749) standard and load NuFi from `window.evmproviders`.
@@ -41,6 +41,7 @@ Note that in that case NuFi will not inject its API if it detects Metamask or ot
 EVM chains currently supported by NuFi's connector:
 * Etherem
 * Milkomeda C1
+* Polygon
 
 ### Solana
 
