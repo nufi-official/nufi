@@ -21,6 +21,10 @@ This repository provides documentation/resources for DApp developers wanting to 
 
 NuFi extension/web currently doesn't allow switching between mainnet/testnet. The extension available on Chrome webstore is configured for mainnet. To test your dapp on testnet, you can download the latest testnet build of the extension [here](https://assets.nu.fi/extension/testnet/nufi-cwe-testnet-latest.zip)
 
+### Cardano Sanchonet build
+
+In order to test NuFi with the Cardano Conway-era testnet (Sanchonet) and [CIP-95](https://developers.cardano.org/docs/governance/cardano-improvement-proposals/cip-0095/), please download this [build](https://assets.nu.fi/extension/sanchonet/nufi-cwe-sanchonet-latest.zip) of the extension.
+
 ## DApp connectors
 
 NuFi offers several DApp connectors allowing it to interact with DApps across multiple blockchains. Below are instructions/resources clarifying how to integrate them.
