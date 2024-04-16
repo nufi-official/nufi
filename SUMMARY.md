@@ -1,10 +1,12 @@
 # Table of contents
 
+## 💰 NuFi Wallet
+
 * [Introduction](README.md)
-  * [Testnet](introduction/testnet.md)
-  * [DApp Connector](introduction/dapp-connector.md)
-  * [Branding guidelines](introduction/branding-guidelines.md)
-  * [Support](introduction/support.md)
+* [Testnet](nufi-wallet/testnet.md)
+* [DApp Connector](nufi-wallet/dapp-connector.md)
+* [Branding guidelines](nufi-wallet/branding-guidelines.md)
+* [Support](nufi-wallet/support.md)
 
 ## 🔨 SSO - NuFi dApp SDK for Cardano
 
