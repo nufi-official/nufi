@@ -10,4 +10,4 @@
 
 ## 🔨 SSO - NuFi dApp SDK for Cardano
 
-* [Page 1](sso-nufi-dapp-sdk-for-cardano/page-1.md)
+* [NuFi dapp SDK for Cardano](sso-nufi-dapp-sdk-for-cardano/nufi-dapp-sdk-for-cardano.md)
