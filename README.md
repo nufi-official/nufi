@@ -14,12 +14,3 @@ _A Web3 crypto wallet for Cardano, Ethereum, Flow, Solana, Milkomeda C1 and Poly
 
 This repository provides documentation/resources for DApp developers wanting to integrate with NuFi.
 
-
-
-### Branding guidelines
-
-
-
-### Support
-
-You can contact us by creating a new support ticket [here](https://support.nu.fi/support/tickets/new)
