@@ -1,4 +1,4 @@
-# DApp connector
+# DApp Connector
 
 ### DApp connectors
 
