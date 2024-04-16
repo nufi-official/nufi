@@ -24,7 +24,7 @@ EVM chains currently supported by NuFi's connector:
 
 #### Solana
 
-NuFi's Solana connector can be integrated through the Solana Wallet Standard ([https://github.com/anza-xyz/wallet-standard](https://github.com/anza-xyz/wallet-standard)).
+NuFi's Solana connector can be integrated through the Solana Wallet Standard ([https://github.com/anza-xyz/wallet-standard](https://github.com/anza-xyz/wallet-standard)). More info [here](https://github.com/wallet-standard/wallet-standard).
 
 #### Flow
 
