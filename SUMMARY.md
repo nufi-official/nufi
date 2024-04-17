@@ -1,17 +1,22 @@
 # Table of contents
 
-## 💰 NuFi Wallet
+## NuFi Wallet
 
-* [Introduction](README.md)
-* [Testnet](nufi-wallet/testnet.md)
-* [DApp Connector](nufi-wallet/dapp-connector.md)
-* [Branding guidelines](nufi-wallet/branding-guidelines.md)
-* [Support](nufi-wallet/support.md)
+- [Introduction](README.md)
+- [Testnet](nufi-wallet/testnet.md)
+- [DApp Connector](nufi-wallet/dapp-connector.md)
+- [Branding guidelines](nufi-wallet/branding-guidelines.md)
+- [Support](nufi-wallet/support.md)
 
-## 🔨 SSO - NuFi dApp SDK for Cardano
+## NUFICONNECT - SINGLE SIGN-ON SDK FOR CARDANO DAPPS
 
-* [NuFi dapp SDK for Cardano](sso-nufi-dapp-sdk-for-cardano/nufi-dapp-sdk-for-cardano.md)
+- [Overview](nuficonnect-single-sign-on-sdk-for-cardano-dapps/overview.md)
+- [Integration instructions](nuficonnect-single-sign-on-sdk-for-cardano-dapps/integration/instructions/instructions.md)
+- [Get help](nuficonnect-single-sign-on-sdk-for-cardano-dapps/get-help.md)
 
-## 🦊 Metamask Snap - Cardano Wallet
+## METAMASK SNAP - CARDANO WALLET
 
-* [Page 1](metamask-snap-cardano-wallet/page-1.md)
+- [Overview](metamask-snap-cardano-wallet/overview.md)
+- [Integration instructions](metamask-snap-cardano-wallet/integration/instructions/instructions.md)
+- [Useful links](metamask-snap-cardano-wallet/useful-links.md)
+- [Get help](metamask-snap-cardano-wallet/get-help.md)
