@@ -10,7 +10,11 @@ NuFi's Cardano connector implements the [CIP-30](https://github.com/cardano-foun
 
 #### Ethereum / Milkomeda C1 / Polygon
 
-NuFi's Ethereum connector implements Metamask's API documented here: https://docs.metamask.io/guide/ethereum-provider.html#methods. When integrating NuFi we suggest following the [eip-5749](https://eips.ethereum.org/EIPS/eip-5749) standard and load NuFi from `window.evmproviders`.
+NuFi's Ethereum connector implements Metamask's API documented here: https://docs.metamask.io/guide/ethereum-provider.html#methods. When integrating NuFi we suggest following the [eip-6963](https://eips.ethereum.org/EIPS/eip-6963) standard.
+
+**Legacy eip-5749**
+
+Nufi still supports [eip-5749](https://eips.ethereum.org/EIPS/eip-5749) standard and you can load NuFi from `window.evmproviders`. However, its prefered to use [eip-6963](https://eips.ethereum.org/EIPS/eip-6963) instead.
 
 **Legacy `window.ethereum` injection**
 
