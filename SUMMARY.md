@@ -14,4 +14,4 @@
 
 ## Metamask Snap - Cardano Wallet
 
-* [Introduction](metamask-snap-cardano-wallet/page-1.md)
+* [Coming soon](metamask-snap-cardano-wallet/page-1.md)
