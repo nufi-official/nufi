@@ -12,6 +12,6 @@
 
 * [NuFi dApp SDK for Cardano](sso-nufi-dapp-sdk-for-cardano/nufi-dapp-sdk-for-cardano.md)
 
-## Metamask Snap - Cardano Wallet
+## Metamask Snaps - Cardano Wallet
 
-* [Coming soon](metamask-snap-cardano-wallet/page-1.md)
+* [Coming soon](metamask-snaps-cardano-wallet/page-1.md)
