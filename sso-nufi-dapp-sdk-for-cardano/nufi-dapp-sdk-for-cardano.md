@@ -1,10 +1,10 @@
-# NuFi dapp SDK for Cardano
+# NuFi dApp SDK for Cardano
 
 
 
 ## Demo
 
-Example dapp with the current version of SDK is deployed [here](https://sdk-example.nu.fi).
+Example dApp with the current version of SDK is deployed [here](https://sdk-example.nu.fi).
 
 Snippets of example integration can be found [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c). Note that the versions in `package.json` need to be updated to the latest available.
 
@@ -79,7 +79,7 @@ const currentSSOInfo = nufiCoreSdk.getApi().onSocialLoginInfoChanged((data) => {
 })
 ```
 
-Alternatively you can call:
+Alternatively, you can call:
 
 ```typescript
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -106,19 +106,19 @@ import nufiCoreSdk from '@nufi/dapp-client-core'
 nufiCoreSdk.getApi().hideWidget()
 ```
 
-Use this method to close the Widget in case user logs out using your dapp.
+Use this method to close the Widget in case the user logs out using your dApp.
 
 ### Show widget
 
 When calling CIP-30 `enable` method the Widget will be shown automatically.
 
-Therefore if you detect (possibly a flag in your localStorage) that users is logged in you can simply call the `enable` method to make the Widget visible.
+Therefore if you detect (possibly a flag in your localStorage) that user is logged in you can simply call the `enable` method to make the Widget visible.
 
 ### Use SsoButton for React
 
 You can use the `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` with any JS framework, though in case you are using React we prepared a simple Social login button widget that you can use out of the box.
 
-You can always use the SDK with you custom Button widget.
+You can always use the SDK with your custom Button widget.
 
 NPM
 
@@ -177,7 +177,7 @@ import '@nufi/sso-button-react/dist/style.css'
 />
 ```
 
-For complete example please check [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c).
+For a complete example please check [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c).
 
 ### Selecting Extension provider
 
@@ -185,7 +185,7 @@ For users with NuFi extension installed, there are no specific actions required.
 
 ## Limitations
 
-* Only cardano preprod network is enabled for now.
+* Only the Cardano Preprod network is enabled for now.
 * The terms and conditions will be updated before going to production.
 
 ## Troubleshooting
