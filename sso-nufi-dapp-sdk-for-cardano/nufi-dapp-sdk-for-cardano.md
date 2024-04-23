@@ -1,6 +1,6 @@
 # NuFi dapp SDK for Cardano
 
-## NuFi dapp SDK for Cardano
+
 
 ## Demo
 
@@ -8,7 +8,7 @@ Example dapp with the current version of SDK is deployed [here](https://sdk-exam
 
 Snippets of example integration can be found [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c). Note that the versions in `package.json` need to be updated to the latest available.
 
-### Install packages
+## Install packages
 
 NPM
 
@@ -24,9 +24,9 @@ yarn add @nufi/dapp-client-core
 yarn add @nufi/dapp-client-cardano
 ```
 
-### Usage
+## Usage
 
-#### Initialize core SDK
+### Initialize core SDK
 
 ```typescript
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -41,7 +41,7 @@ If no origin is passed to `init` it defaults to `https://wallet.nu.fi`. Note tha
 
 For now please the origin from the above example. Note that it will you `preprod` network.
 
-#### Initialize SSO login for Cardano
+### Initialize SSO login for Cardano
 
 ```typescript
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -67,7 +67,7 @@ You can currently choose `google` and `discord` providers.
 
 The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSSO` object which has methods corresponding to CIP-30 standard.
 
-#### Listening to social login info changes
+### Listening to social login info changes
 
 You can listen to the changes of current social login info using the following:
 
@@ -98,7 +98,7 @@ export type SocialLoginInfo = {
 } & Record<string, unknown>
 ```
 
-#### HideWidget
+### HideWidget
 
 ```typescript
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -108,13 +108,13 @@ nufiCoreSdk.getApi().hideWidget()
 
 Use this method to close the Widget in case user logs out using your dapp.
 
-#### Show widget
+### Show widget
 
 When calling CIP-30 `enable` method the Widget will be shown automatically.
 
 Therefore if you detect (possibly a flag in your localStorage) that users is logged in you can simply call the `enable` method to make the Widget visible.
 
-#### Use SsoButton for React
+### Use SsoButton for React
 
 You can use the `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` with any JS framework, though in case you are using React we prepared a simple Social login button widget that you can use out of the box.
 
@@ -179,13 +179,13 @@ import '@nufi/sso-button-react/dist/style.css'
 
 For complete example please check [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c).
 
-#### Selecting Extension provider
+### Selecting Extension provider
 
 For users with NuFi extension installed, there are no specific actions required. Simply access `window.cardano.nufi` from anywhere as it is not controlled by the NuFi Widget SDK.
 
-### Limitations
+## Limitations
 
 * Only cardano preprod network is enabled for now.
 * The terms and conditions will be updated before going to production.
 
-### Troubleshooting
+## Troubleshooting
