@@ -30,6 +30,13 @@ yarn add @nufi/dapp-client-cardano
 
 ```typescript
 import nufiCoreSdk from '@nufi/dapp-client-core'
+
+// mainnet network (runs against staging version of NuFi)
+nufiCoreSdk.init('https://wallet-staging.nu.fi')
+
+// OR
+
+// preprod network (runs against staging version of NuFi)
 nufiCoreSdk.init('https://wallet-testnet-staging.nu.fi')
 ```
 
