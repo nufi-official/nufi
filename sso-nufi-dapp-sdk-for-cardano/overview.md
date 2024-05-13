@@ -50,6 +50,31 @@ Our service then shares the user's public key with the dApp to connect the user.
 
 Important to know: the complete private key never leaves the user's device and is never shared with the dApp.
 
+## FAQ
+
+Q: Is NuFiConnect a non-custodial service?
+
+A: Yes, all components of NuFiConnect are non-custodial.
+
+
+
+Q: Does NuFiConnect replace existing wallet connection options?
+
+A: No, NuFiConnect does not replace a dApp’s existing wallet connection options.
+
+
+
+Q: Is it multi-chain?
+
+A: At present, NuFiConnect runs on Cardano mainnet and Cardano preprod testnet, and there are plans to deploy NuFiConnect on other chains in the coming months.
+
+
+
+Q: How can a Web2 user get ADA or Cardano tokens?
+
+A: After a Web2 user has connected by logging in with a social account, the user can access a wallet widget in the corner of the dApp’s screen. Through this widget, a user can buy ADA with a credit card and swap Cardano tokens using a DEX aggregator powered by DexHunter.
+
+\
 \
 \
 \
