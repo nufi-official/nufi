@@ -8,11 +8,11 @@
 * [Branding guidelines](nufi-wallet/branding-guidelines.md)
 * [Support](nufi-wallet/support.md)
 
-## SSO - NuFi dApp SDK for Cardano
+## NuFiConnect - DApp SDK for Cardano
 
-* [Overview](sso-nufi-dapp-sdk-for-cardano/overview.md)
-* [Integration instructions](sso-nufi-dapp-sdk-for-cardano/integration-instructions.md)
-* [Get help](sso-nufi-dapp-sdk-for-cardano/get-help.md)
+* [Overview](nuficonnect-dapp-sdk-for-cardano/overview.md)
+* [Integration instructions](nuficonnect-dapp-sdk-for-cardano/integration-instructions.md)
+* [Get help](nuficonnect-dapp-sdk-for-cardano/get-help.md)
 
 ## Metamask Snap - Cardano Wallet
 
