@@ -50,6 +50,24 @@ Our service then shares the user's public key with the dApp to connect the user.
 
 Important to know: the complete private key never leaves the user's device and is never shared with the dApp.
 
+### Two-Factor Authentication (2FA)
+
+Unlike classic crypto wallets, NuFiConnect does not require you to store and memorize a seed phrase. Instead, we offer a secure and user-friendly experience without compromising security. All you need is access to your social account, so it’s crucial to keep those secure.
+
+To enhance your security, we strongly recommend enabling Two-Factor Authentication (2FA) for the social account linked to your NuFiConnect.
+
+**What is 2FA?**
+
+2FA adds an extra layer of security by requiring a temporary code, in addition to your password, when there is an attempted login from an unrecognized device or browser.
+
+**How to Set Up 2FA**
+
+1. **Choose a 2FA App**: We recommend using apps like Google Authenticator.
+2. **Enable 2FA**: Follow the instructions provided by your email or social account service to enable 2FA. This usually involves scanning a QR code with your 2FA app.
+3. **Secure Your Phone**: Ensure that your phone, which will generate the 2FA codes, is also secure.
+
+Enabling 2FA greatly enhances your security, making it almost impossible for unauthorized users to access your account without both your password and your phone. We encourage setting up 2FA on all your important platforms.
+
 ## FAQ
 
 Q: Is NuFiConnect a non-custodial service?
