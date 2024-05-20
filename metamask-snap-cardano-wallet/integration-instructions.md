@@ -1,31 +1,31 @@
 # Integration instructions
 
-Integrates your DApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your DApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
+Integrates your dApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your dApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
 
 ## Demo
 
-Example dapp with the current version of SDK is deployed [here](https://sdk-example.nu.fi/).
+Example dApp with the current version of SDK is deployed [here](https://sdk-example.nu.fi/).
 
-Example integration can be found in [https://github.com/nufi-official/adaplays.xyz](https://github.com/nufi-official/adaplays.xyz) which is a forked/updated version of playground cardano dapp.
+Example integration can be found in [https://github.com/nufi-official/adaplays.xyz](https://github.com/nufi-official/adaplays.xyz) which is a forked/updated version of playground Cardano dApp.
 
-We recommend to check usage of `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` in [File](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
+We recommend checking usage of `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` in the [File](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
 
-The other changes made to this repository are specific to its example dapp, so we do not recommend focusing on them.
+The other changes made to this repository are specific to its example dApp, so we do not recommend focusing on them.
 
 ## Install custom Metamask Flask
 
 _Note that the custom Metamask Flask has to be used due to changes in the Metamask extension itself, that were not yet published to production_.
 
-Download Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/v11.10.0-flask-cip3-allow-remote-snap) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/v11.10.0-flask-cip3-allow-remote-snap/v11.10.0-flask-cip3-allow-remote-snap.zip) to download it directly.
+Download the Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/v11.10.0-flask-cip3-allow-remote-snap) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/v11.10.0-flask-cip3-allow-remote-snap/v11.10.0-flask-cip3-allow-remote-snap.zip) to download it directly.
 
 Once downloaded:
 
 * Extract the attached zip file
-* Use separate Chrome profile to not mess with the production Metamask extension
+* Use a separate Chrome profile to not mess with the production Metamask extension
 * Navigate to `chrome://extensions/`
 * Press "Load unpacked"
 * Choose the "chrome" folder of the extracted zip file
-* Alternatively use "firefox" folder if using Firefox
+* Alternatively, use "firefox" folder if using Firefox
 
 ## Install packages
 
@@ -72,7 +72,7 @@ If no origin is passed to `init` it defaults to `https://wallet.nu.fi`. Note tha
 
 For now please use the origin from the above example.
 
-### Check whether user has Metamask installed
+### Check whether the user has Metamask installed
 
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -95,7 +95,7 @@ initNufiDappCardanoSdk(nufiCoreSdk, 'snap')
 const api = await window.cardano.nufiSnap.enable()
 ```
 
-The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSnap` object which has methods corresponding to CIP-30 standard.
+The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSnap` object which has methods corresponding to the CIP-30 standard.
 
 See [multiple providers docs](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/multipleProviders.md) to use `initNufiDappCardanoSdk` correctly, when supporting multiple providers.
 
@@ -107,13 +107,13 @@ import nufiCoreSdk from '@nufi/dapp-client-core'
 nufiCoreSdk.getApi().hideWidget()
 ```
 
-Use this method to close the Widget in case user logs out using your dapp.
+Use this method to close the Widget in case the user logs out using your dApp.
 
 ### Show widget
 
 When calling CIP-30 `enable` method the Widget will be shown automatically.
 
-Therefore if you detect (possibly a flag in your localStorage) that users is logged in you can simply call the `enable` method to make the Widget visible.
+userTherefore if you detect (possibly a flag in your localStorage) that user is logged in you can simply call the `enable` method to make the Widget visible.
 
 ### Selecting Extension provider
 
