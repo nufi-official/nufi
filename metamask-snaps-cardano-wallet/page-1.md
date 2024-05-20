@@ -10,6 +10,16 @@ The Cardano wallet created invisibly for the user is non-custodial and its crede
 
 After connecting to a DApp, a MetaMask user can access their Cardano wallet using a wallet widget in the corner of the screen. Through this widget, a user can approve or reject transactions, manage assets (including NFTs), purchase ADA with fiat, swap Cardano tokens using a DEX aggregator (powered by DexHunter), and exchange 500+ assets for ADA using a cross-chain exchange.
 
+## Wallet functionality
+
+Snap creates a non-custodial Cardano wallet for the user in the background and connects the user’s wallet to the DApp automatically. This wallet is embedded into the DApp itself and is accessible from a wallet widget in the corner of the DApp.
+
+Using the wallet widget, a user can approve transactions (the widget pops up automatically when there's an action to be taken) and is able to manage assets including NFTs.
+
+This wallet widget also includes a `BUY ADA` button that opens a fiat on-ramp (for the user to buy ADA with a card, Apple/Google pay, etc) and a button to swap tokens, which directs the user to the Cardano DEX aggregator, where the user can acquire any Cardano token they need.
+
+There’s also a cross-chain exchange available to the user which supports 500+ crypto assets (and doesn’t require a user to sign up or KYC in order to use it). With this exchange, a user can swap e.g. ETH or stablecoins (in any wallet) for ADA and deposit directly into their Snap wallet.
+
 ## Security
 
 Snap is a non-custodial service composed of various non-custodial, open-source, and audited components.
