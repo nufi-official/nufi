@@ -2,6 +2,8 @@
 
 ## Introduction
 
+#### _This service is coming soon_
+
 MetaMask Snap for Cardano (or ‘Snap’ for short) is a service that makes Cardano DApps instantly accessible to MetaMask’s millions of users. It adds MetaMask wallet support to a Cardano DApp so that MetaMask users can connect to a Cardano DApp using only their MetaMask wallet.
 
 With Snap, a MetaMask user can start using a Cardano DApp in under 10 seconds. They navigate to a DApp that’s using the Snap service, and click ‘Connect with MetaMask’; in the background, the service creates a non-custodial Cardano wallet for the user and connects the user to the DApp automatically.

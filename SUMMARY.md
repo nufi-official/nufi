@@ -8,15 +8,15 @@
 * [Branding guidelines](nufi-wallet/branding-guidelines.md)
 * [Support](nufi-wallet/support.md)
 
-## NuFiConnect - DApp SDK for Cardano
+## NUFICONNECT - SINGLE SIGN-ON SDK FOR CARDANO DAPPS (Closed Beta)
 
-* [Overview](nuficonnect-dapp-sdk-for-cardano/overview.md)
-* [Integration instructions](nuficonnect-dapp-sdk-for-cardano/integration-instructions.md)
-* [Get help](nuficonnect-dapp-sdk-for-cardano/get-help.md)
+* [Overview](nuficonnect-single-sign-on-sdk-for-cardano-dapps-closed-beta/overview.md)
+* [Integration instructions](nuficonnect-single-sign-on-sdk-for-cardano-dapps-closed-beta/integration-instructions.md)
+* [Get help](nuficonnect-single-sign-on-sdk-for-cardano-dapps-closed-beta/get-help.md)
 
-## Metamask Snap - Cardano Wallet
+## METAMASK SNAP - CARDANO WALLET (Coming Soon)
 
-* [Overview](metamask-snaps-cardano-wallet/page-1.md)
-* [Integration instructions](metamask-snap-cardano-wallet/integration-instructions.md)
-* [Useful links](metamask-snap-cardano-wallet/useful-links.md)
-* [Get help](metamask-snap-cardano-wallet/get-help.md)
+* [Overview](metamask-snap-cardano-wallet-coming-soon/page-1.md)
+* [Integration instructions](metamask-snap-cardano-wallet-coming-soon/integration-instructions.md)
+* [Useful links](metamask-snap-cardano-wallet-coming-soon/useful-links.md)
+* [Get help](metamask-snap-cardano-wallet-coming-soon/get-help.md)

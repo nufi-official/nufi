@@ -30,6 +30,8 @@ yarn add @nufi/dapp-client-cardano
 
 ### Initialize core SDK
 
+The guide below explains how to set up NuFiConnect in a mainnet or testnet staging environment. When you are ready to run this service in a production environment, please [contact us](https://nufi.gitbook.io/developer-docs/nuficonnect-dapp-sdk-for-cardano/get-help) so that we can whitelist your domain(s) and enable the service to use a production version of NuFi wallet.
+
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 
