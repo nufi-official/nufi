@@ -45,6 +45,8 @@ yarn add @nufi/dapp-client-cardano
 
 ## Usage
 
+_Make sure that your app's Content Security Policy does not block the iframe that is injected by our SDK. For more info please check_ [_iframe injection docs_](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/iframeInjection.md)_._
+
 ### Initialize core SDK
 
 The guide below explains how to set up MetaMask Snap Cardano Wallet in a mainnet or testnet staging environment. When you are ready to run this service in a production environment, please [contact us](https://nufi.gitbook.io/developer-docs/nuficonnect-dapp-sdk-for-cardano/get-help) so that we can whitelist your domain(s) and enable the service to use a production version of NuFi wallet.
