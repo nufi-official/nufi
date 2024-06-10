@@ -16,7 +16,7 @@ The other changes made to this repository are specific to its example dApp, so w
 
 _Note that the custom Metamask Flask has to be used due to changes in the Metamask extension itself, that were not yet published to production_.
 
-Download the Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/v11.10.0-flask-cip3-allow-remote-snap) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/v11.10.0-flask-cip3-allow-remote-snap/v11.10.0-flask-cip3-allow-remote-snap.zip) to download it directly.
+Download the Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/v11.10.0-flask-cip3-allow-remote-snap) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/11.15.6\_as\_11.18.0/11.15.6\_as\_11.18.0.zip) to download it directly.
 
 Once downloaded:
 
