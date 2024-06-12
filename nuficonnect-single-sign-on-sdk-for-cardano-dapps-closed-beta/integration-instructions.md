@@ -59,6 +59,8 @@ If no origin is passed to `init` it defaults to `https://wallet.nu.fi`. Note tha
 
 For now please use the origin from the above example.
 
+To customize the z-index of the Widget appearance, please see [Widget options](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/widgetOptions.md)
+
 ### Initialize SSO login for Cardano
 
 ```
