@@ -16,16 +16,16 @@ The other changes made to this repository are specific to its example dApp, so w
 
 _Note that the custom Metamask Flask has to be used due to changes in the Metamask extension itself, that were not yet published to production_.
 
-Download the Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/11.15.6\_as\_11.18.0) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/11.15.6\_as\_11.18.0/11.15.6\_as\_11.18.0.zip) to download it directly.
+Download the Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/11.15.6_as_11.18.0) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/11.15.6_as_11.18.0/11.15.6_as_11.18.0.zip) to download it directly.
 
 Once downloaded:
 
-* Extract the attached zip file
-* Use a separate Chrome profile to not mess with the production Metamask extension
-* Navigate to `chrome://extensions/`
-* Press "Load unpacked"
-* Choose the "chrome" folder of the extracted zip file
-* Alternatively, use "firefox" folder if using Firefox
+- Extract the attached zip file
+- Use a separate Chrome profile to not mess with the production Metamask extension
+- Navigate to `chrome://extensions/`
+- Press "Load unpacked"
+- Choose the "chrome" folder of the extracted zip file
+- Alternatively, use "firefox" folder if using Firefox
 
 ## Install packages
 
@@ -45,7 +45,7 @@ yarn add @nufi/dapp-client-cardano
 
 ## Usage
 
-_Make sure that your app's Content Security Policy does not block the iframe that is injected by our SDK. For more info please check_ [_iframe injection docs_](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/iframeInjection.md)_._
+_Make sure that your app's Content Security Policy does not block the iframe that is injected by our SDK. For more info please check_ [_iframe injection docs_](../common/iframeInjection.md)_._
 
 ### Initialize core SDK
 
@@ -76,7 +76,7 @@ If no origin is passed to `init` it defaults to `https://wallet.nu.fi`. Note tha
 
 For now please use the origin from the above example.
 
-To customize the z-index of the Widget appearance, please see [Widget options](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/widgetOptions.md)
+To customize Widget appearance (such as z-index), please see [Widget options](../common/widgetOptions.md)
 
 ### Check whether the user has Metamask installed
 
@@ -103,7 +103,7 @@ const api = await window.cardano.nufiSnap.enable()
 
 The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSnap` object which has methods corresponding to the CIP-30 standard.
 
-See [multiple providers docs](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/multipleProviders.md) to use `initNufiDappCardanoSdk` correctly, when supporting multiple providers.
+See [multiple providers docs](../common/multipleProviders.md) to use `initNufiDappCardanoSdk` correctly, when supporting multiple providers.
 
 ### HideWidget
 
@@ -127,6 +127,4 @@ For users with NuFi extension installed, there are no specific actions required.
 
 ## Limitations
 
-
-
-* The terms and conditions will be updated before going to production.
+- The terms and conditions will be updated before going to production.

@@ -6,7 +6,7 @@ An example dApp with the current version of SDK is deployed [here](https://sdk-e
 
 Example integration can be found in [https://github.com/nufi-official/adaplays.xyz](https://github.com/nufi-official/adaplays.xyz) which is a forked/updated version of playground cardano dApp.
 
-We recommend checking usage of `@nufi/dapp-client-core`, `@nufi/dapp-client-cardano` and `@nufi/sso-button-react` in [File 1](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) and [File 2](https://github.com/nufi-official/adaplays.xyz/blob/main/pages/\_app.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
+We recommend checking usage of `@nufi/dapp-client-core`, `@nufi/dapp-client-cardano` and `@nufi/sso-button-react` in [File 1](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) and [File 2](https://github.com/nufi-official/adaplays.xyz/blob/main/pages/_app.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
 
 The other changes made to this repository are specific to its example dApp, so we do not recommend focusing on them.
 
@@ -28,7 +28,7 @@ yarn add @nufi/dapp-client-cardano
 
 ## Usage
 
-_Make sure that your app's Content Security Policy does not block the iframe that is injected by our SDK. For more info please check_ [_iframe injection docs_](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/iframeInjection.md)_._
+_Make sure that your app's Content Security Policy does not block the iframe that is injected by our SDK. For more info please check_ [_iframe injection docs_](../common/iframeInjection.md)_._
 
 ### Initialize core SDK
 
@@ -59,7 +59,7 @@ If no origin is passed to `init` it defaults to `https://wallet.nu.fi`. Note tha
 
 For now please use the origin from the above example.
 
-To customize the z-index of the Widget appearance, please see [Widget options](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/widgetOptions.md)
+To customize Widget appearance (such as z-index), please see [Widget options](../common/widgetOptions.md)
 
 ### Initialize SSO login for Cardano
 
@@ -87,7 +87,7 @@ You can currently choose `google` and `discord` providers.
 
 The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSSO` object which has methods corresponding to the CIP-30 standard.
 
-See [multiple providers docs](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/multipleProviders.md) to use `initNufiDappCardanoSdk` correctly, when supporting multiple providers.
+See [multiple providers docs](../common/multipleProviders.md) to use `initNufiDappCardanoSdk` correctly, when supporting multiple providers.
 
 ### Listening to social login info changes
 
@@ -207,4 +207,4 @@ For users with NuFi extension installed, there are no specific actions required.
 
 ## Limitations
 
-* The terms and conditions will be updated before going to production.
+- The terms and conditions will be updated before going to production.
