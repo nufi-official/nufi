@@ -1,6 +1,6 @@
 # Integration instructions
 
-Integrates your DApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your DApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
+Integrates your DApp with the NuFi web wallet injected into it is as a widget. Users can seamlessly onboard/log in into your DApp using social providers such as Google or Discord while being able to manage their wallet in the NuFi interface.
 
 ## Demo
 
@@ -8,24 +8,9 @@ Example dapp with the current version of SDK is deployed [here](https://sdk-exam
 
 Example integration can be found in [https://github.com/nufi-official/adaplays.xyz](https://github.com/nufi-official/adaplays.xyz) which is a forked/updated version of playground cardano dapp.
 
-We recommend to check usage of `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` in [File](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
+We recommend to check usage of `@nufi/dapp-client-core`, `@nufi/dapp-client-cardano` and `@nufi/sso-button-react` in [File 1](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) and [File 2](https://github.com/nufi-official/adaplays.xyz/blob/main/pages/\_app.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
 
 The other changes made to this repository are specific to its example dapp, so we do not recommend focusing on them.
-
-## Install custom Metamask Flask
-
-_Note that the custom Metamask Flask has to be used due to changes in the Metamask extension itself, that were not yet published to production_.
-
-Download Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/11.15.6\_as\_11.18.0) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/11.15.6\_as\_11.18.0/11.15.6\_as\_11.18.0.zip) to download it directly.
-
-Once downloaded:
-
-* Extract the attached zip file
-* Use separate Chrome profile to not mess with the production Metamask extension
-* Navigate to `chrome://extensions/`
-* Press "Load unpacked"
-* Choose the "chrome" folder of the extracted zip file
-* Alternatively use "firefox" folder if using Firefox
 
 ## Install packages
 
@@ -76,36 +61,64 @@ For now please use the origin from the above example.
 
 To customize Widget appearance (such as z-index), please see [Widget options](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/widgetOptions.md)
 
-### Check whether user has Metamask installed
-
-Note that the Widget handles cases when users do not have Metamask installed. Therefore its fine to always show some "Login with MetaMask" button on your dapp.
-
-If you nevertheless wish to detect whether the MetaMask is installed, you can do it via the following call:
-
-```
-import nufiCoreSdk from '@nufi/dapp-client-core'
-
-nufiCoreSdk.getApi().isMetamaskInstalled().then((isMetamaskInstalled) => {
-  // `isMetamaskInstalled` is `true` if user has Metamask installed
-  // You can e.g. set your local state to reflect that and display
-  // login with metamask option.
-})
-```
-
-### Initialize Snap login for Cardano
+### Initialize SSO login for Cardano
 
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 import {initNufiDappCardanoSdk} from '@nufi/dapp-client-cardano'
 
-// Should be called before accessing `window.cardano.nufiSnap`
-initNufiDappCardanoSdk(nufiCoreSdk, 'snap')
-const api = await window.cardano.nufiSnap.enable()
+// Should be called before accessing `window.cardano.nufiSSO`
+initNufiDappCardanoSdk(nufiCoreSdk, 'sso')
+const api = await window.cardano.nufiSSO.enable()
 ```
 
-The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSnap` object which has methods corresponding to CIP-30 standard.
+When called like in the example above users will be asked to choose Web3Auth provider inside the NuFi Widget. If you want to choose specific provider you can pass it using `provider` parameter like this:
+
+```
+import nufiCoreSdk from '@nufi/dapp-client-core'
+import {initNufiDappCardanoSdk} from '@nufi/dapp-client-cardano'
+
+// Should be called before accessing `window.cardano.nufiSSO`
+initNufiDappCardanoSdk(nufiCoreSdk, 'sso', {provider: 'google'})
+const api = await window.cardano.nufiSSO.enable()
+```
+
+You can currently choose `google` and `discord` providers.
+
+The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSSO` object which has methods corresponding to CIP-30 standard.
 
 See [multiple providers docs](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/multipleProviders.md) to use `initNufiDappCardanoSdk` correctly, when supporting multiple providers.
+
+### Listening to social login info changes
+
+You can listen to the changes of current social login info using the following:
+
+```
+import nufiCoreSdk from '@nufi/dapp-client-core'
+
+const currentSSOInfo = nufiCoreSdk.getApi().onSocialLoginInfoChanged((data) => {
+  // Store data in your app
+})
+```
+
+Alternatively you can call:
+
+```
+import nufiCoreSdk from '@nufi/dapp-client-core'
+
+const currentSSOInfo = nufiCoreSdk.getApi().getSocialLoginInfo()
+```
+
+The returned data is either `null` or of the following type
+
+```
+export type SocialLoginInfo = {
+  email: string | null
+  name: string | null
+  profileImage: string | null
+  typeOfLogin: 'google' | 'discord'
+} & Record<string, unknown>
+```
 
 ### HideWidget
 
@@ -123,11 +136,82 @@ When calling CIP-30 `enable` method the Widget will be shown automatically.
 
 Therefore if you detect (possibly a flag in your localStorage) that users is logged in you can simply call the `enable` method to make the Widget visible.
 
+### Use SsoButton for React
+
+You can use the `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` with any JS framework, though in case you are using React we prepared a simple Social login button widget that you can use out of the box.
+
+You can always use the SDK with you custom Button widget.
+
+NPM
+
+```
+npm install @nufi/sso-button-react
+```
+
+Yarn
+
+```
+yarn add @nufi/sso-button-react
+```
+
+```
+import nufiCoreSdk from '@nufi/dapp-client-core'
+import {initNufiDappCardanoSdk} from '@nufi/dapp-client-cardano'
+import {SsoButton} from '@nufi/sso-button-react'
+import '@nufi/sso-button-react/dist/style.css'
+
+// Logged in example
+<SsoButton
+  state="logged_in"
+  label={ssoUserInfo?.email || 'Connected'}
+  userInfo={{
+    provider: ssoUserInfo?.typeOfLogin
+  }}
+  isLoading={isDisconnecting}
+  onLogout={() => {
+    // custom logic
+  }}
+  classes={{
+    base: styles.yourCustomClass
+  }}
+/>
+```
+
+```
+import nufiCoreSdk from '@nufi/dapp-client-core'
+import {initNufiDappCardanoSdk} from '@nufi/dapp-client-cardano'
+import {SsoButton} from '@nufi/sso-button-react'
+import '@nufi/sso-button-react/dist/style.css'
+
+// Logged out example
+<SsoButton
+  state="logged_out"
+  label="Social login"
+  isLoading={isConnecting}
+  onLogin={() => {
+    // custom logic
+    initNufiDappCardanoSdk(nufiCoreSdk, 'sso');
+    // custom logic
+  }}
+  classes={{
+    base: styles.yourCustomClassName
+  }}
+/>
+```
+
+For complete example please check [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c).
+
 ### Selecting Extension provider
 
 For users with NuFi extension installed, there are no specific actions required. Simply access `window.cardano.nufi` from anywhere as it is not controlled by the NuFi Widget SDK.
 
 ## Whitelist
+
+### NuFiConnect mainnet
+
+To integrate the widget on mainnet, your DApp's domain needs need to be whitelisted. Please [contact us](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/contact.md) and specify the domains to be whitelisted.
+
+Note that `localhost` with any port is supported by default.
 
 ### On-off ramp service
 

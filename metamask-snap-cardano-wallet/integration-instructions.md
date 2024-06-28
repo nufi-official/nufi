@@ -1,31 +1,31 @@
 # Integration instructions
 
-Integrates your dApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your dApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
+Integrates your DApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your DApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
 
 ## Demo
 
-Example dApp with the current version of SDK is deployed [here](https://sdk-example.nu.fi/).
+Example dapp with the current version of SDK is deployed [here](https://sdk-example.nu.fi/).
 
-Example integration can be found in [https://github.com/nufi-official/adaplays.xyz](https://github.com/nufi-official/adaplays.xyz) which is a forked/updated version of playground Cardano dApp.
+Example integration can be found in [https://github.com/nufi-official/adaplays.xyz](https://github.com/nufi-official/adaplays.xyz) which is a forked/updated version of playground cardano dapp.
 
-We recommend checking usage of `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` in the [File](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
+We recommend to check usage of `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` in [File](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
 
-The other changes made to this repository are specific to its example dApp, so we do not recommend focusing on them.
+The other changes made to this repository are specific to its example dapp, so we do not recommend focusing on them.
 
 ## Install custom Metamask Flask
 
 _Note that the custom Metamask Flask has to be used due to changes in the Metamask extension itself, that were not yet published to production_.
 
-Download the Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/11.15.6\_as\_11.18.0) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/11.15.6\_as\_11.18.0/11.15.6\_as\_11.18.0.zip) to download it directly.
+Download Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/11.15.6\_as\_11.18.0) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/11.15.6\_as\_11.18.0/11.15.6\_as\_11.18.0.zip) to download it directly.
 
 Once downloaded:
 
 * Extract the attached zip file
-* Use a separate Chrome profile to not mess with the production Metamask extension
+* Use separate Chrome profile to not mess with the production Metamask extension
 * Navigate to `chrome://extensions/`
 * Press "Load unpacked"
 * Choose the "chrome" folder of the extracted zip file
-* Alternatively, use "firefox" folder if using Firefox
+* Alternatively use "firefox" folder if using Firefox
 
 ## Install packages
 
@@ -48,8 +48,6 @@ yarn add @nufi/dapp-client-cardano
 _Make sure that your app's Content Security Policy does not block the iframe that is injected by our SDK. For more info please check_ [_iframe injection docs_](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/iframeInjection.md)_._
 
 ### Initialize core SDK
-
-The guide below explains how to set up MetaMask Snap Cardano Wallet in a mainnet or testnet staging environment. When you are ready to run this service in a production environment, please [contact us](https://nufi.gitbook.io/developer-docs/nuficonnect-dapp-sdk-for-cardano/get-help) so that we can whitelist your domain(s) and enable the service to use a production version of NuFi wallet.
 
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -76,9 +74,13 @@ If no origin is passed to `init` it defaults to `https://wallet.nu.fi`. Note tha
 
 For now please use the origin from the above example.
 
-To customize the z-index of the Widget appearance, please see [Widget options](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/widgetOptions.md)
+To customize Widget appearance (such as z-index), please see [Widget options](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/widgetOptions.md)
 
-### Check whether the user has Metamask installed
+### Check whether user has Metamask installed
+
+Note that the Widget handles cases when users do not have Metamask installed. Therefore its fine to always show some "Login with MetaMask" button on your dapp.
+
+If you nevertheless wish to detect whether the MetaMask is installed, you can do it via the following call:
 
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -101,7 +103,7 @@ initNufiDappCardanoSdk(nufiCoreSdk, 'snap')
 const api = await window.cardano.nufiSnap.enable()
 ```
 
-The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSnap` object which has methods corresponding to the CIP-30 standard.
+The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSnap` object which has methods corresponding to CIP-30 standard.
 
 See [multiple providers docs](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/multipleProviders.md) to use `initNufiDappCardanoSdk` correctly, when supporting multiple providers.
 
@@ -113,20 +115,26 @@ import nufiCoreSdk from '@nufi/dapp-client-core'
 nufiCoreSdk.getApi().hideWidget()
 ```
 
-Use this method to close the Widget in case the user logs out using your dApp.
+Use this method to close the Widget in case user logs out using your dapp.
 
 ### Show widget
 
 When calling CIP-30 `enable` method the Widget will be shown automatically.
 
-userTherefore if you detect (possibly a flag in your localStorage) that user is logged in you can simply call the `enable` method to make the Widget visible.
+Therefore if you detect (possibly a flag in your localStorage) that users is logged in you can simply call the `enable` method to make the Widget visible.
 
 ### Selecting Extension provider
 
 For users with NuFi extension installed, there are no specific actions required. Simply access `window.cardano.nufi` from anywhere as it is not controlled by the NuFi Widget SDK.
 
+## Whitelist
+
+### On-off ramp service
+
+If you want a service user to be able to purchase crypto inside the widget using a fiat on-ramp (powered by Moonpay), your DApp's domain needs to be whitelisted. Please [contact us](https://github.com/nufi-official/nufi-dapp-sdk/blob/main/docs/contact.md) and specify the domains to be whitelisted.
+
+Once whitelisted you will need to use [this extension](https://chromewebstore.google.com/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj) for local testing, or ensure that your dapp is locally accessible via `http://localhost` or `https://localhost` (i.e. no port number in the URL).
+
 ## Limitations
-
-
 
 * The terms and conditions will be updated before going to production.
