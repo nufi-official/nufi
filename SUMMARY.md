@@ -16,7 +16,7 @@
 
 ## METAMASK SNAP - CARDANO WALLET
 
-* [Overview](metamask-snap-cardano-wallet/page-1.md)
+* [Overview](metamask-snap-cardano-wallet/overview.md)
 * [Integration instructions](metamask-snap-cardano-wallet/integration-instructions.md)
 * [Useful links](metamask-snap-cardano-wallet/useful-links.md)
 * [Get help](metamask-snap-cardano-wallet/get-help.md)
