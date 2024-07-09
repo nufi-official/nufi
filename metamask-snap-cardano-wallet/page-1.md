@@ -2,52 +2,53 @@
 
 ## Introduction
 
-**This service is coming soon**
+**This service is coming soon.**
 
-MetaMask Cardano Wallet Snap  (or ‘Snap’ for short) is a service that makes Cardano DApps instantly accessible to MetaMask’s millions of users. It adds Cardano support to MetaMask so that MetaMask users can connect to a Cardano DApp using only their MetaMask wallet. This is possible thanks to [MetaMask Snaps](https://metamask.io/snaps/) technology, whose goal is to extend MetaMask’s functionality to non-EVM chains like Cardano.
+Cardano Wallet is coming to MetaMask. Thanks to [Snaps](https://snaps.metamask.io/), the Cardano ecosystem will be directly accessible to MetaMask’s millions of users. Using the Cardano Wallet Snap, users can interact with Cardano dApps directly through their MetaMask.
 
-With Snap, a MetaMask user can start using a Cardano DApp in under 10 seconds. They navigate to a Cardano DApp that has a NuFi Widget for Cardano Wallet Snap integrated, and click ‘Connect with MetaMask’; the user will be prompted to enable Cardano Wallet Snap in their MetaMask which will instantly derive Cardano wallet keys from the MetaMask seed phrase.
+With the Cardano Wallet Snap, a MetaMask user can start using a Cardano DApp in under 10 seconds. Here’s how it works:
 
-After connecting to a DApp, a MetaMask user can see their MetaMask Cardano wallet balance in the NuFi widget in the corner of the screen. Through this widget, a user can review transaction details (before confirming and signing in their MetaMask wallet), manage assets including NFTs, purchase ADA with a credit card, swap Cardano tokens using a DEX aggregator (powered by DexHunter), and exchange 500+ assets for ADA using a cross-chain exchange.
+1. The user navigates to a Cardano DApp and selects MetaMask from the wallet options.
 
-The private key to the Cardano Wallet never leaves MetaMask! It is never exposed to the dApp or to the Cardano Wallet Snap.
+![](https://lh7-us.googleusercontent.com/docsz/AD\_4nXfdl-svuI2hDoTL3u2WHr\_Am2-dC4IdcUJA6JwuBCKq2p2pyaR\_Hr2JkNxcnqQfQlREqURkEM97IsPCVJVjXJ\_1zfYl6LgXQzgY3HyD9r\_1QgMg0PQtBPcpiGeXjh-g2hCVfwWBhMTIpIMtdtkKs-3Z-gd6?key=XnlM6nH3wkXg7Jpid9qweQ)
+
+2. The user is prompted to install Cardano Wallet Snap in their MetaMask wallet.
+
+![](https://lh7-us.googleusercontent.com/docsz/AD\_4nXfSWgU9ms0qqN\_JLt3mRPynFr53MCvIG3U7JGdgNgvJhbW4hpqciV80wrCwpM90VoeOCCTnFP4o-SI347jkLVlEDiGhgOf\_1d43yGultDb-JXFg6AS1exV4vm6qpDXdGMlCyTLx3WlkzA74g45p\_A9qBiSr?key=XnlM6nH3wkXg7Jpid9qweQ)
+
+3. The user’s MetaMask Cardano wallet – created for them behind the scenes instantly – is successfully connected to the DApp.
+
+{% embed url="https://www.youtube.com/watch?v=-BbqKgKyGVc" %}
 
 ## How it works
 
-The Metamask Cardano Wallet service consists of two main components.&#x20;
+The MetaMask Cardano Wallet consists of two main components:
 
-1. Cardano Wallet Snap
+1. **Cardano Wallet Snap**\
+   A MetaMask Snap that enables the user’s MetaMask wallet to derive Cardano keys and sign Cardano transactions. The Snap is installed by the user and runs directly in the MetaMask browser extension wallet. When asked to sign a transaction, the Snap triggers a MetaMask popup, and the user must confirm the action in the MetaMask wallet.
+2. **NuFi Widget**\
+   The NuFi widget is a DApp-integrated wallet UI that provides complete wallet functionalities such as managing and sending Cardano assets, including NFTs, purchasing ADA with a credit card, cross-chain exchange, and a Cardano DEX aggregator. The widget is integrated into the DApp via SDK and serves as a user-friendly layer between the MetaMask and the DApp.
 
-A Metamask snap, that enables the user’s Metamask wallet to expose methods for deriving Cardano keys and signing Cardano transactions. The snap has to be installed by the user and runs directly in the Metamask wallet. When asked to sign a transaction the snap triggers a Metamask popup and the user has to confirm the action in the Metamask wallet. Cardano Wallet snap serves as a bridge between Metamask wallet and NuFi widget.
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-2. NuFi Widget
+For additional functionalities like staking, detailed portfolio overview, sending multiple tokens, and more, users can simply open the NuFi dashboard. It can be accessed directly from the widget or via [wallet.nu.fi](http://wallet.nu.fi).
 
-Facilitates a non-custodial Cardano Wallet from the user’s Metamask Wallet seed phrase. It does so, by asking for public keys and transaction signatures from Cardano Wallet snap. This way it serves as a bridge between a Cardano Wallet snap and a Cardano Dapp. It is integrated into the Dapp and comes with an integrated wallet UI that provides wallet functionalities such as sending, trading, staking, and more.
+<figure><img src="../.gitbook/assets/chrome-extension___gpnihlnnodeiiaakbikldcihojploeca_index.html(1920) (85).png" alt=""><figcaption></figcaption></figure>
 
-In a common scenario, a sign transaction request from a Dapp is sent to the NuFi widget, which shows transaction details and prompts the user to confirm. If the user confirms, the NuFi widget asks the Metamask wallet to sign the transaction. Metamask wallet displays a popup and if the user confirms, it signs the transaction using Cardano Wallet snap.
+In a common scenario, a sign transaction request from a DApp is sent to the NuFi widget, which shows transaction details and prompts the user to confirm. If the user confirms, the NuFi widget asks MetaMask to sign the transaction. MetaMask displays a popup, and if the user confirms, it signs the transaction.
 
-## Wallet functionality
-
-Cardano Wallet Snap creates a non-custodial Cardano wallet for the user in the background and connects the user’s wallet to the DApp automatically. The Snap is communicating with the DApp via the NuFi widget which can be accessed in the bottom left corner of the screen.
-
-Using the NuFi widget, a user can review transactions (the widget pops up automatically when there's an action to be taken) and is able to manage assets including NFTs.
-
-This wallet widget also includes a BUY ADA button that opens a fiat on-ramp (for the user to buy ADA with a card, Apple/Google pay, etc) and a button to swap tokens, which directs the user to a Cardano DEX aggregator, where the user can acquire any Cardano token they need.
-
-There’s also a cross-chain exchange available to the user which supports 500+ crypto assets (and doesn’t require a user to sign up or KYC in order to use it). With this exchange, a user can swap e.g. ETH or stablecoins (in any wallet) for ADA.
-
-A MetaMask user can also access their Cardano account by visiting [wallet.nu.fi](http://wallet.nu.fi) and clicking the MetaMask icon. This will open the user’s Cardano account inside NuFi wallet dashboard, where the user can access additional functionality such as ADA staking and a detailed portfolio overview.
+{% embed url="https://www.youtube.com/watch?v=myWw5eJw2Ks" %}
 
 ## Security
 
-Cardano Wallet for MetaMask is a non-custodial service composed of various non-custodial, open-source, and audited components.
+Cardano Wallet Snap provides MetaMask with the capability to derive Cardano keys and sign Cardano transactions using these keys. The Snap is open-source and [audited](https://sayfer.io/audits/metamask-snap-audit-report-for-nufi/).
 
-Cardano Wallet Snap is a key component of the service. It provides MetaMask with the capability to derive Cardano keys and sign Cardano transactions using these keys. The Snap is open-source and audited.
+The NuFi widget is a bridge between a Cardano DApp and MetaMask. When the user initiates a transaction, they first review and approve the transaction inside the NuFi widget. After the transaction is approved in the widget, the MetaMask wallet launches and prompts the user to approve and sign the transaction in MetaMask’s interface. If approved in MetaMask, the signed transaction is returned to NuFi widget and submitted on the Cardano blockchain.
 
-NuFi widget is a bridge between a DApp and Cardano Wallet Snap. When the user performs a transaction, they first review and approve the transaction inside the NuFi widget (which launches automatically when there’s an action for the user to take). After the transaction is approved in the widget, MetaMask wallet launches and prompts the user to approve and sign the transaction in MetaMask’s interface. If approved in MetaMask, the transaction is submitted on the Cardano blockchain by NuFi widget.
-
-Important to know: the private key is never shared with the Snap, Widget or DApp. The derivation of the private key and transaction signing happens always in the MetaMask core.
+Important to know: the private key is never shared with the DApp or NuFi widget. The derivation of the private key and transaction signing always happens in the MetaMask core.
 
 ### Seed phrase backup
 
-A user can restore their Cardano account in a non-custodial Cardano wallet using their MetaMask wallet’s seed phrase.
+The Cardano Wallet is derived directly from the MetaMask seed phrase. Users can easily export their MetaMask seed phrase and import it into any other Cardano wallet that supports a 12-word phrase.
+
+\
