@@ -49,6 +49,6 @@ Important to know: the private key is never shared with the DApp or NuFi widget.
 
 ### Seed phrase backup
 
-The Cardano Wallet is derived directly from the MetaMask seed phrase. Users can easily export their MetaMask seed phrase and import it into any other Cardano wallet that supports a 12-word phrase.
+The Cardano Wallet keys are derived directly from the MetaMask seed phrase. Users can easily export their MetaMask seed phrase and import it into any other Cardano wallet that supports a 12-word phrase.
 
 \
