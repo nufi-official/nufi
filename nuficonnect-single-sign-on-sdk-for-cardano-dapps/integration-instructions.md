@@ -201,6 +201,8 @@ import '@nufi/sso-button-react/dist/style.css'
 
 For a complete example please check [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c).
 
+You can find the assets for the login button [here](https://github.com/nufi-official/nufi-dapp-sdk/tree/main/packages/sso-button-react/src/assets).
+
 #### Button position
 
 For seamless user navigation, it is recommended that the Login button be positioned in the top bar, to the left of the Wallet selection options.
