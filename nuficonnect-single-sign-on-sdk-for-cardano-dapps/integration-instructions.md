@@ -205,7 +205,7 @@ For a complete example please check [here](https://github.com/nufi-official/adap
 
 For seamless user navigation, it is recommended that the Login button be positioned in the top bar, to the left of the Wallet selection options.
 
-![](https://lh7-us.googleusercontent.com/docsz/AD\_4nXePyJc-nimWWgAkE\_GriES45iHZw1ngFwXypWAc-67fTH6CXhtRAmR1A8MqoMDtaV1zxMvabTaeH4mYYxhB\_fNDzAKYF7u5udK2zWpdg6-YjOM9SsF\_RInMXjcX\_2mBL2n5RjtQF5L0xzJbqgzQSFKukV4f?key=RXkXQrW8MbZ0Bca-QAlumA)
+<figure><img src="../.gitbook/assets/button position 1.png" alt=""><figcaption><p>Recommended button position</p></figcaption></figure>
 
 If the DApp UI does not allow this, the Login button can be placed inside the Wallet selection options as the top option.
 
