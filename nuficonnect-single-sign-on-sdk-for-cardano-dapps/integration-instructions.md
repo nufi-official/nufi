@@ -199,7 +199,20 @@ import '@nufi/sso-button-react/dist/style.css'
 />
 ```
 
-For complete example please check [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c).
+For a complete example please check [here](https://github.com/nufi-official/adaplays.xyz/commit/641466c4e8b534f1461692cac6987396b77b5c7c).
+
+#### Button position
+
+For seamless user navigation, it is recommended that the Login button be positioned in the top bar, to the left of the Wallet selection options.
+
+![](https://lh7-us.googleusercontent.com/docsz/AD\_4nXePyJc-nimWWgAkE\_GriES45iHZw1ngFwXypWAc-67fTH6CXhtRAmR1A8MqoMDtaV1zxMvabTaeH4mYYxhB\_fNDzAKYF7u5udK2zWpdg6-YjOM9SsF\_RInMXjcX\_2mBL2n5RjtQF5L0xzJbqgzQSFKukV4f?key=RXkXQrW8MbZ0Bca-QAlumA)
+
+If the DApp UI does not allow this, the Login button can be placed inside the Wallet selection options as the top option.
+
+![](https://lh7-us.googleusercontent.com/docsz/AD\_4nXem750soIv9S-IsehOhSxVS3YGIq7v4o2QrZPqDHshTgf7T9sLo57FHBHQkEEAWdQ6bvSKRF0\_KgOKlITXYca8yyPcC9-WKGRd8BCBKs9-iWH\_8DwG5CknI7lv6dDeGLn7S6eY3q3mklyxR0Ib52kW4Vh-g?key=RXkXQrW8MbZ0Bca-QAlumA)
+
+\
+
 
 ### Selecting Extension provider
 
