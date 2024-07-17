@@ -1,4 +1,4 @@
-# Integration instructions (test)
+# Integration instructions
 
 Integrates your DApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your DApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
 
