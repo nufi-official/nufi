@@ -10,11 +10,11 @@ With the Cardano Wallet Snap, a MetaMask user can start using a Cardano DApp in 
 
 1. The user navigates to a Cardano DApp and selects MetaMask from the wallet options.
 
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfdl-svuI2hDoTL3u2WHr_Am2-dC4IdcUJA6JwuBCKq2p2pyaR_Hr2JkNxcnqQfQlREqURkEM97IsPCVJVjXJ_1zfYl6LgXQzgY3HyD9r_1QgMg0PQtBPcpiGeXjh-g2hCVfwWBhMTIpIMtdtkKs-3Z-gd6?key=XnlM6nH3wkXg7Jpid9qweQ)
+<figure><img src="../.gitbook/assets/gitbook edited (1).png" alt=""><figcaption></figcaption></figure>
 
-2. The user is prompted to install Cardano Wallet Snap in their MetaMask wallet.
+1. The user is prompted to install Cardano Wallet Snap in their MetaMask wallet.
 
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfSWgU9ms0qqN_JLt3mRPynFr53MCvIG3U7JGdgNgvJhbW4hpqciV80wrCwpM90VoeOCCTnFP4o-SI347jkLVlEDiGhgOf_1d43yGultDb-JXFg6AS1exV4vm6qpDXdGMlCyTLx3WlkzA74g45p_A9qBiSr?key=XnlM6nH3wkXg7Jpid9qweQ)
+![](https://lh7-us.googleusercontent.com/docsz/AD\_4nXfSWgU9ms0qqN\_JLt3mRPynFr53MCvIG3U7JGdgNgvJhbW4hpqciV80wrCwpM90VoeOCCTnFP4o-SI347jkLVlEDiGhgOf\_1d43yGultDb-JXFg6AS1exV4vm6qpDXdGMlCyTLx3WlkzA74g45p\_A9qBiSr?key=XnlM6nH3wkXg7Jpid9qweQ)
 
 3. The user’s MetaMask Cardano wallet – created for them behind the scenes instantly – is successfully connected to the DApp.
 
