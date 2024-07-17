@@ -1,4 +1,4 @@
-# Integration instructions (test)
+# Integration instructions
 
 Integrates your DApp with the NuFi web wallet injected into it is as a widget. Users can seamlessly onboard/log in into your DApp using social providers such as Google or Discord while being able to manage their wallet in the NuFi interface.
 
