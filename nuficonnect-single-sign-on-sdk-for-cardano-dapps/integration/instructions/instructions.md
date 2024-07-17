@@ -40,8 +40,10 @@ import nufiCoreSdk from '@nufi/dapp-client-core'
 // mainnet network
 nufiCoreSdk.init('https://wallet.nu.fi')
 
-// preprod network (runs against staging version of NuFi)
-nufiCoreSdk.init('https://wallet-testnet-staging.nu.fi')
+// OR
+
+// preprod network
+nufiCoreSdk.init('https://wallet-testnet.nu.fi')
 
 // OR
 
