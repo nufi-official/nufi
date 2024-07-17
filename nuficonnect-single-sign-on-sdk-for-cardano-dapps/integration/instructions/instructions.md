@@ -37,6 +37,9 @@ _Make sure that your app's Content Security Policy does not block the iframe tha
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 
+// mainnet network
+nufiCoreSdk.init('https://wallet.nu.fi')
+
 // preprod network (runs against staging version of NuFi)
 nufiCoreSdk.init('https://wallet-testnet-staging.nu.fi')
 
@@ -44,20 +47,13 @@ nufiCoreSdk.init('https://wallet-testnet-staging.nu.fi')
 
 // preview network (runs against staging version of NuFi)
 nufiCoreSdk.init('https://wallet-preview-staging.nu.fi')
-
-// OR
-
-// mainnet network (runs against staging version of NuFi)
-nufiCoreSdk.init('https://wallet-staging.nu.fi')
 ```
 
 The `init` function has to be called before calling other functions from `@nufi/dapp-client-core` or `@nufi/dapp-client-cardano` SDK.
 
 Its advisable to call it as soon as possible as it will also prefetch the Widget, and will make it appear faster when being requested later on.
 
-If no origin is passed to `init` it defaults to `https://wallet.nu.fi`. Note that this default will not work until officially released.
-
-For now please use the origin from the above example.
+If no origin is passed to `init` it defaults to `https://wallet.nu.fi`.
 
 To customize Widget appearance (such as z-index), please see [Widget options](../common/widgetOptions.md)
 
