@@ -1,4 +1,4 @@
-# Iframe injection (test)
+# Iframe injection
 
 Our SDK relies on iframe with NuFi content being injected into
 your page. In order for it to function correctly we need that you:
