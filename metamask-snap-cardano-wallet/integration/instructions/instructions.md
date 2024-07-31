@@ -1,4 +1,6 @@
-# Integration instructions
+<img src="./images/cardano_metamask.svg" alt="drawing" width="200"/>
+
+# Integration instructions 
 
 Integrates your DApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your DApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
 
@@ -11,21 +13,6 @@ Example integration can be found in [https://github.com/nufi-official/adaplays.x
 We recommend to check usage of `@nufi/dapp-client-core` and `@nufi/dapp-client-cardano` in [File](https://github.com/nufi-official/adaplays.xyz/blob/main/components/navbar.tsx) where most of the changes are contained. Alternatively just searching for the usage of these libraries should showcase all relevant steps in the integration.
 
 The other changes made to this repository are specific to its example dapp, so we do not recommend focusing on them.
-
-## Install custom Metamask Flask
-
-_Note that the custom Metamask Flask has to be used due to changes in the Metamask extension itself, that were not yet published to production_.
-
-Download Metamask Flask extension from [here](https://github.com/nufi-official/metamask-extension/releases/tag/11.15.6_as_11.18.0) or click [here](https://github.com/nufi-official/metamask-extension/releases/download/11.15.6_as_11.18.0/11.15.6_as_11.18.0.zip) to download it directly.
-
-Once downloaded:
-
-- Extract the attached zip file
-- Use separate Chrome profile to not mess with the production Metamask extension
-- Navigate to `chrome://extensions/`
-- Press "Load unpacked"
-- Choose the "chrome" folder of the extracted zip file
-- Alternatively use "firefox" folder if using Firefox
 
 ## Install packages
 
@@ -134,6 +121,9 @@ For users with NuFi extension installed, there are no specific actions required.
 If you want a service user to be able to purchase crypto inside the widget using a fiat on-ramp (powered by Moonpay), your DApp's domain needs to be whitelisted. Please [contact us](../common/contact.md) and specify the domains to be whitelisted.
 
 Once whitelisted you will need to use [this extension](https://chromewebstore.google.com/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj) for local testing, or ensure that your dapp is locally accessible via `http://localhost` or `https://localhost` (i.e. no port number in the URL).
+
+## Icon
+As an icon for Metamask provider in your dapp, you can download this [svg](./images/cardano_metamask.svg).
 
 ## Limitations
 
