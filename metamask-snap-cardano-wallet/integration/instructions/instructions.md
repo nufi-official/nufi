@@ -128,7 +128,3 @@ Once whitelisted you will need to use [this extension](https://chromewebstore.go
 
 ## Icon
 As an icon for Metamask provider in your dapp, you can download this [svg](./images/cardano_metamask.svg).
-
-## Limitations
-
-- The terms and conditions will be updated before going to production.
