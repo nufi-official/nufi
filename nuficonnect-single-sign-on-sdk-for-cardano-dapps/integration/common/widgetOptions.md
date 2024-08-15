@@ -17,3 +17,16 @@ nufiCoreSdk.init(nufiDomain, {
   zIndex: 99999,
 })
 ```
+
+## Overriding widget position
+
+If the default position of the widget (bottom left of your webpage) doesn't suit you, you can simply override it with CSS, using widget's iframe id attribute, e.g.:
+
+```
+iframe#nufi-widget {
+  bottom: 100px !important
+  left: inherit !important
+  right: 16px
+  // whatever else
+}
+```
