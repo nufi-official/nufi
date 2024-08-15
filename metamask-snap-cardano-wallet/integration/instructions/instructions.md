@@ -49,8 +49,8 @@ nufiCoreSdk.init('https://wallet-preview-staging.nu.fi')
 
 // OR
 
-// mainnet network (runs against staging version of NuFi)
-nufiCoreSdk.init('https://wallet-staging.nu.fi')
+// mainnet network
+nufiCoreSdk.init('https://wallet.nu.fi')
 ```
 
 The `init` function has to be called before calling other functions from `@nufi/dapp-client-core` or `@nufi/dapp-client-cardano` SDK.
