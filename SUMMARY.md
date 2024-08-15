@@ -21,8 +21,8 @@
 
 - [Overview](metamask-snap-cardano-wallet/overview.md)
 - [Integration instructions](metamask-snap-cardano-wallet/integration/instructions/instructions.md)
-  - [Iframe injection](nuficonnect-single-sign-on-sdk-for-cardano-dapps/integration/common/iframeInjection.md)
-  - [Multiple providers](nuficonnect-single-sign-on-sdk-for-cardano-dapps/integration/common/multipleProviders.md)
-  - [Widget options](nuficonnect-single-sign-on-sdk-for-cardano-dapps/integration/common/widgetOptions.md)
+  - [Iframe injection](metamask-snap-cardano-wallet/integration/common/iframeInjection.md)
+  - [Multiple providers](metamask-snap-cardano-wallet/integration/common/multipleProviders.md)
+  - [Widget options](metamask-snap-cardano-wallet/integration/common/widgetOptions.md)
 - [Useful links](metamask-snap-cardano-wallet/useful-links.md)
 - [Get help](metamask-snap-cardano-wallet/get-help.md)
