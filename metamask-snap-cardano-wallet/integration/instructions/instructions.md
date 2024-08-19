@@ -39,18 +39,18 @@ _Make sure that your app's Content Security Policy does not block the iframe tha
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 
+// mainnet network
+nufiCoreSdk.init('https://wallet.nu.fi')
+
+// OR
+
 // preprod network (runs against staging version of NuFi)
-nufiCoreSdk.init('https://wallet-testnet-staging.nu.fi')
+nufiCoreSdk.init('https://wallet-staging.nu.fi')
 
 // OR
 
 // preview network (runs against staging version of NuFi)
 nufiCoreSdk.init('https://wallet-preview-staging.nu.fi')
-
-// OR
-
-// mainnet network
-nufiCoreSdk.init('https://wallet.nu.fi')
 ```
 
 The `init` function has to be called before calling other functions from `@nufi/dapp-client-core` or `@nufi/dapp-client-cardano` SDK.
