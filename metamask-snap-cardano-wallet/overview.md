@@ -37,6 +37,14 @@ In a common scenario, a sign transaction request from a DApp is sent to the NuFi
 
 {% embed url="https://www.youtube.com/watch?v=myWw5eJw2Ks" %}
 
+## Wallet functionality
+
+NuFi’s service provides Cardano wallet functionality for a MetaMask user while they’re connected to a DApp.&#x20;
+
+The user’s Cardano wallet is embedded into the DApp itself and is accessible from a widget located in the corner of the DApp. Using the wallet widget, a user can approve transactions (the widget pops up automatically when there's an action to be taken) and can manage assets including NFTs.&#x20;
+
+This wallet widget includes a BUY ADA button that opens a fiat on-ramp (for the user to buy ADA with the card, Apple/Google pay, etc) and a button to Exchange tokens, which directs the user to cross-chain Exchange (to swap 500+ tokens for ADA) and to a Cardano DEX aggregator (powered by DexHunter), where the user can acquire any Cardano token they need.
+
 ## Security
 
 Cardano Wallet Snap provides MetaMask with the capability to derive Cardano keys and sign Cardano transactions using these keys. The Snap is open-source and [audited](https://sayfer.io/audits/metamask-snap-audit-report-for-nufi/).
