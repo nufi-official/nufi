@@ -2,8 +2,6 @@
 
 ## Introduction
 
-#### _**This service is currently in Closed Beta phase**_
-
 NuFiConnect is a service for Cardano dApps that enables Web2 (non-crypto) users to connect to a dApp without needing a wallet.
 
 {% embed url="https://www.youtube.com/embed/7aOCLNwAZhQ?si=kXqp0chJfU2EEnrb" %}
@@ -90,12 +88,9 @@ Q: How can a Web2 user get ADA or Cardano tokens?
 
 A: After a Web2 user has connected by logging in with a social account, the user can access a wallet widget in the corner of the dApp’s screen. Through this widget, a user can buy ADA with a credit card and swap Cardano tokens using a DEX aggregator powered by DexHunter.
 
-Q: Where can I try this service?
 
-A: You can try NuFiConnect [here](https://sdk-example.nu.fi/) using a testing DApp called Adaplays (please note that the password you enter is requested by the DApp and is not part of our service).
 
-You can get tADA from the testnet faucet [here](https://docs.cardano.org/cardano-testnets/tools/faucet/) (be sure to select Preprod Testnet as the environment).\
+## Partners
 
-\
-\
-\
+Try it yourself through our partners’ DApps:\
+NuFiConnect is used by [VyFi](https://app.vyfi.io/), [Jam on Bread](https://jamonbread.io/), [Engimi](https://enigmi.io/), and [WingRiders](https://www.wingriders.com/).
