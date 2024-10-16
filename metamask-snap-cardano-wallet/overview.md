@@ -2,9 +2,7 @@
 
 ## Introduction
 
-**This service is coming soon.**
-
-Cardano Wallet is coming to MetaMask. Thanks to [Snaps](https://snaps.metamask.io/), the Cardano ecosystem will be directly accessible to MetaMask’s millions of users. Using the Cardano Wallet Snap, users can interact with Cardano dApps directly through their MetaMask.
+Thanks to [Snaps](https://snaps.metamask.io/), the Cardano ecosystem is directly accessible to MetaMask’s millions of users. Using the Cardano Wallet Snap, users can interact with Cardano dApps directly through their MetaMask.
 
 With the Cardano Wallet Snap, a MetaMask user can start using a Cardano DApp in under 10 seconds. Here’s how it works:
 
@@ -50,3 +48,8 @@ Important to know: the private key is never shared with the DApp or NuFi widget.
 ### Seed phrase backup
 
 The Cardano Wallet keys are derived directly from the MetaMask seed phrase. Users can easily export their MetaMask seed phrase and import it into any other Cardano wallet that supports a 12-word phrase.
+
+## Partners
+
+\
+MetaMask Snap Cardano Wallet is used by [DexHunter](https://app.dexhunter.io/), [WingRiders](https://app.wingriders.com/), [VyF](http://vyfi.io/)i, [GeniusYield](https://www.geniusyield.co/), [Jam on Bread](http://jamonbread.io/), [WayUp](http://wayup.io/), [Cardano Crypto Casino](https://cardanocryptocasino.com/), [Cardano Casino](https://cardanocasino.vip/), [Coinecta](https://coinecta.fi/), [FluidTokens](https://fluidtokens.com/), Anvil, [Axo](https://www.axo.trade/), Mesh, [Ada Markets](https://ada.markets/), [Levvy](https://levvy.fi/) and [Crashr](https://www.crashr.io/).
