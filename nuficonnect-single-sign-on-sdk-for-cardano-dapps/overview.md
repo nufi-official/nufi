@@ -4,7 +4,9 @@
 
 NuFiConnect is a service for Cardano dApps that enables Web2 (non-crypto) users to connect to a dApp without needing a wallet.
 
-{% embed url="https://www.youtube.com/embed/7aOCLNwAZhQ?si=kXqp0chJfU2EEnrb" %}
+
+
+{% embed url="https://youtu.be/3LzZ4lI5t8g" %}
 
 To do this, NuFiConnect adds social account login options to a dApp’s frontend; when a Web2 user logs in with a social account Google, Facebook, X, and so on, NuFiConnect creates a non-custodial Cardano wallet for the user in the background and connects the user to the dApp automatically.
 
