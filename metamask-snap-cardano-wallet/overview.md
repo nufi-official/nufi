@@ -16,7 +16,9 @@ With the Cardano Wallet Snap, a MetaMask user can start using a Cardano DApp in 
 
 3. The user’s MetaMask Cardano wallet – created for them behind the scenes instantly – is successfully connected to the DApp.
 
-{% embed url="https://www.youtube.com/watch?v=-BbqKgKyGVc" %}
+
+
+{% embed url="https://www.youtube.com/watch?v=lL1xx9Q6nCE" %}
 
 ## How it works
 
@@ -35,7 +37,9 @@ For additional functionalities like staking, detailed portfolio overview, sendin
 
 In a common scenario, a sign transaction request from a DApp is sent to the NuFi widget, which shows transaction details and prompts the user to confirm. If the user confirms, the NuFi widget asks MetaMask to sign the transaction. MetaMask displays a popup, and if the user confirms, it signs the transaction.
 
-{% embed url="https://www.youtube.com/watch?v=myWw5eJw2Ks" %}
+
+
+{% embed url="https://www.youtube.com/watch?v=x-wlkQCdQSs" %}
 
 ## Wallet functionality
 
