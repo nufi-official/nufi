@@ -72,3 +72,15 @@ nufiCoreSdk.getApi().getWidgetVisibilityStatus() // 'closed' | 'hidden' | 'open'
 nufiCoreSdk.getApi().showWidget('opened')
 nufiCoreSdk.getApi().showWidget('closed')
 ```
+
+## Responsive mode
+
+Use this option to activate responsive behavior for mobile devices.
+If we used we will detect whether to serve responsive or standard
+version of the widget.
+
+```typescript
+nufiCoreSdk.init(nufiDomain, {
+  responsive: true
+})
+```
