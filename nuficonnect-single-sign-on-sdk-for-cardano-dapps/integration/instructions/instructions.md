@@ -1,6 +1,6 @@
 # Integration instructions
 
-Integrates your DApp with the NuFi web wallet injected into it is as a widget. Users can seamlessly onboard/log in into your DApp using social providers such as Google or Discord while being able to manage their wallet in the NuFi interface.
+Integrates your DApp with the NuFi web wallet injected into it is as a widget. Users can seamlessly onboard/log in into your DApp using social providers such as Google, Facebook or Discord while being able to manage their wallet in the NuFi interface.
 
 ## Demo
 
@@ -57,7 +57,7 @@ Its advisable to call it as soon as possible as it will also prefetch the Widget
 
 If no origin is passed to `init` it defaults to `https://wallet.nu.fi`.
 
-To customize Widget appearance (such as z-index), please see [Widget options](../common/widgetOptions.md)
+To customize Widget appearance (such as z-index, color mode, featured tokens, manual expand or collapse), please see [Widget options](../common/widgetOptions.md)
 
 ### Initialize SSO login for Cardano
 
@@ -81,7 +81,7 @@ initNufiDappCardanoSdk(nufiCoreSdk, 'sso', {provider: 'google'})
 const api = await window.cardano.nufiSSO.enable()
 ```
 
-You can currently choose `google` and `discord` providers.
+You can currently choose `google`, `facebook` and `discord` providers.
 
 The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSSO` object which has methods corresponding to CIP-30 standard.
 
@@ -114,7 +114,7 @@ export type SocialLoginInfo = {
   email: string | null
   name: string | null
   profileImage: string | null
-  typeOfLogin: 'google' | 'discord'
+  typeOfLogin: 'google' | 'discord' | 'facebook'
 } & Record<string, unknown>
 ```
 
@@ -228,9 +228,3 @@ If your Cardano DApp calls [getCollateral()](https://github.com/cardano-foundati
 To integrate the widget on mainnet, your DApp's domain needs need to be whitelisted. Please [contact us](../common/contact.md) and specify the domains to be whitelisted.
 
 Note that `localhost` with any port is supported by default.
-
-### On-off ramp service
-
-If you want a service user to be able to purchase crypto inside the widget using a fiat on-ramp (powered by Moonpay), your DApp's domain needs to be whitelisted. Please [contact us](../common/contact.md) and specify the domains to be whitelisted.
-
-Once whitelisted you will need to use [this extension](https://chromewebstore.google.com/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj) for local testing, or ensure that your dapp is locally accessible via `http://localhost` or `https://localhost` (i.e. no port number in the URL).
