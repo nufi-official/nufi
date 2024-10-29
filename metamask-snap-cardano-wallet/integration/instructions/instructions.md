@@ -1,6 +1,6 @@
 <img src="./images/cardano_metamask.svg" alt="drawing" width="200"/>
 
-# Integration instructions 
+# Integration instructions
 
 Integrates your DApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your DApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
 
@@ -61,7 +61,7 @@ If no origin is passed to `init` it defaults to `https://wallet.nu.fi`. Note tha
 
 For now please use the origin from the above example.
 
-To customize Widget appearance (such as z-index), please see [Widget options](../common/widgetOptions.md)
+To customize Widget appearance (such as z-index, color mode, featured tokens, manual expand or collapse), please see [Widget options](../common/widgetOptions.md)
 
 ### Check whether user has Metamask installed
 
@@ -118,13 +118,6 @@ For users with NuFi extension installed, there are no specific actions required.
 
 If your Cardano DApp calls [getCollateral()](https://github.com/cardano-foundation/CIPs/blob/1006fed85a8346bff49aa10431ecf21e70dd4556/CIP-0030/README.md?plain=1#L282), for best UX please make sure to do so only when really needed, otherwise users may get needlessly prompted by the NuFi widget to set up a collateral even if they don't have to. Even better would be to use [CIP-40](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0040) which lets you use regular inputs as collateral, i.e. removes the need to request collateral explicitly from the wallet.
 
-## Whitelist
-
-### On-off ramp service
-
-If you want a service user to be able to purchase crypto inside the widget using a fiat on-ramp (powered by Moonpay), your DApp's domain needs to be whitelisted. Please [contact us](../common/contact.md) and specify the domains to be whitelisted.
-
-Once whitelisted you will need to use [this extension](https://chromewebstore.google.com/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj) for local testing, or ensure that your dapp is locally accessible via `http://localhost` or `https://localhost` (i.e. no port number in the URL).
-
 ## Icon
+
 As an icon for Metamask provider in your dapp, you can download this [svg](./images/cardano_metamask.svg).
