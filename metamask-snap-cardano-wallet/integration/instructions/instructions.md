@@ -45,7 +45,7 @@ nufiCoreSdk.init('https://wallet.nu.fi')
 // OR
 
 // preprod network (runs against staging version of NuFi)
-nufiCoreSdk.init('https://wallet-staging.nu.fi')
+nufiCoreSdk.init('https://wallet-testnet-staging.nu.fi')
 
 // OR
 
