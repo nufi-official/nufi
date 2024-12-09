@@ -12,6 +12,10 @@ We recommend to check usage of `@nufi/dapp-client-core`, `@nufi/dapp-client-card
 
 The other changes made to this repository are specific to its example dapp, so we do not recommend focusing on them.
 
+## Migration
+
+If migrating from older version of SDK please take a look at [_migration docs_](../common/migrations.md).
+
 ## Install packages
 
 NPM
@@ -94,7 +98,7 @@ You can listen to the changes of current social login info using the following:
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 
-const currentSSOInfo = nufiCoreSdk.getApi().onSocialLoginInfoChanged((data) => {
+const currentSSOInfo = nufiCoreSdk.onSocialLoginInfoChanged((data) => {
   // Store data in your app
 })
 ```
@@ -104,7 +108,7 @@ Alternatively you can call:
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 
-const currentSSOInfo = nufiCoreSdk.getApi().getSocialLoginInfo()
+const currentSSOInfo = nufiCoreSdk.getSocialLoginInfo()
 ```
 
 The returned data is either `null` or of the following type
@@ -123,7 +127,8 @@ export type SocialLoginInfo = {
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 
-nufiCoreSdk.getApi().hideWidget()
+const widgetApi = await nufiCoreSdk.getWidgetApi()
+widgetApi.hideWidget()
 ```
 
 Use this method to close the Widget in case user logs out using your dapp.
