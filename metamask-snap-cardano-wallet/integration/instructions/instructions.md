@@ -14,6 +14,10 @@ We recommend to check usage of `@nufi/dapp-client-core` and `@nufi/dapp-client-c
 
 The other changes made to this repository are specific to its example dapp, so we do not recommend focusing on them.
 
+## Migration
+
+If migrating from older version of SDK please take a look at [_migration docs_](../common/migrations.md).
+
 ## Install packages
 
 NPM
@@ -72,7 +76,7 @@ If you nevertheless wish to detect whether the MetaMask is installed, you can do
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 
-nufiCoreSdk.getApi().isMetamaskInstalled().then((isMetamaskInstalled) => {
+nufiCoreSdk.isMetamaskInstalled().then((isMetamaskInstalled) => {
   // `isMetamaskInstalled` is `true` if user has Metamask installed
   // You can e.g. set your local state to reflect that and display
   // login with metamask option.
@@ -99,7 +103,8 @@ See [multiple providers docs](../common/multipleProviders.md) to use `initNufiDa
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
 
-nufiCoreSdk.getApi().hideWidget()
+const widgetApi = await nufiCoreSdk.getWidgetApi()
+widgetApi.hideWidget()
 ```
 
 Use this method to close the Widget in case user logs out using your dapp.
