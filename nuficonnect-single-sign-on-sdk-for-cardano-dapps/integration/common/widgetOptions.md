@@ -40,11 +40,13 @@ The list of featured tokens can be passed in the `initNufiDappCardanoSdk()` call
 
 ```typescript
 initNufiDappCardanoSdk(nufiCoreSdk, platform, {
-    featuredTokens: [{
+  featuredTokens: [
+    {
       assetNameHex: 'YOUR_ASSET_NAME_HEX',
-      policyIdHex: 'YOUR_POLICY_ID_HEX'
-    }]
-  })
+      policyIdHex: 'YOUR_POLICY_ID_HEX',
+    },
+  ],
+})
 ```
 
 ## Color mode
@@ -55,7 +57,7 @@ own, otherwise user's choice takes precedence.
 
 ```typescript
 nufiCoreSdk.init(nufiDomain, {
-  colorMode: 'dark' | 'light'
+  colorMode: 'dark' | 'light',
 })
 ```
 
@@ -68,9 +70,10 @@ UX flow, otherwise we suggest you to avoid using these methods.
 Note that as of now it is not possible to subscribe to the widget visibility status changes.
 
 ```typescript
-nufiCoreSdk.getApi().getWidgetVisibilityStatus() // 'closed' | 'hidden' | 'open'
-nufiCoreSdk.getApi().showWidget('opened')
-nufiCoreSdk.getApi().showWidget('closed')
+const widgetApi = await nufiCoreSdk.getWidgetApi()
+widgetApi.getWidgetVisibilityStatus() // 'closed' | 'hidden' | 'open'
+widgetApi.showWidget('opened')
+widgetApi.showWidget('closed')
 ```
 
 ## Responsive mode
@@ -81,6 +84,6 @@ version of the widget.
 
 ```typescript
 nufiCoreSdk.init(nufiDomain, {
-  responsive: true
+  responsive: true,
 })
 ```
