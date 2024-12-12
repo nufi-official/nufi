@@ -16,6 +16,7 @@
   - [Multiple providers](nuficonnect-single-sign-on-sdk-for-cardano-dapps/integration/common/multipleProviders.md)
   - [Widget options](nuficonnect-single-sign-on-sdk-for-cardano-dapps/integration/common/widgetOptions.md)
   - [Analytics](nuficonnect-single-sign-on-sdk-for-cardano-dapps/integration/common/analytics.md)
+  - [Migrations](nuficonnect-single-sign-on-sdk-for-cardano-dapps/integration/common/migrations.md)
 - [Get help](nuficonnect-single-sign-on-sdk-for-cardano-dapps/get-help.md)
 
 ## METAMASK SNAP - CARDANO WALLET
@@ -26,5 +27,6 @@
   - [Multiple providers](metamask-snap-cardano-wallet/integration/common/multipleProviders.md)
   - [Widget options](metamask-snap-cardano-wallet/integration/common/widgetOptions.md)
   - [Analytics](metamask-snap-cardano-wallet/integration/common/analytics.md)
+  - [Migrations](metamask-snap-cardano-wallet/integration/common/migrations.md)
 - [Useful links](metamask-snap-cardano-wallet/useful-links.md)
 - [Get help](metamask-snap-cardano-wallet/get-help.md)
