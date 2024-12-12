@@ -61,7 +61,7 @@ Its advisable to call it as soon as possible as it will also prefetch the Widget
 
 If no origin is passed to `init` it defaults to `https://wallet.nu.fi`.
 
-To customize Widget appearance (such as z-index, color mode, featured tokens, manual expand or collapse), please see [Widget options](../common/widgetOptions.md)
+To customize Widget appearance (such as z-index, color mode, featured tokens, manual expand or collapse), please see [Widget options](broken-reference)
 
 ### Initialize SSO login for Cardano
 
@@ -210,13 +210,13 @@ You can find the assets for the Login button [here](https://github.com/nufi-offi
 
 For seamless user navigation, it is recommended that the Login button be positioned in the top bar, to the left of the Wallet selection options.
 
-<figure><img src="./images/button-position-1.png" alt=""><figcaption><p>Recommended button position</p></figcaption></figure>
+<figure><img src="images/button-position-1.png" alt=""><figcaption><p>Recommended button position</p></figcaption></figure>
 
 If the DApp UI does not allow this, the Login button can be placed inside the Wallet selection options as the top option.
 
-<figure><img src="./images/button-position-2.png" alt="" width="375"><figcaption><p>Login button inside Wallet options</p></figcaption></figure>
+<figure><img src="images/button-position-2.png" alt="" width="375"><figcaption><p>Login button inside Wallet options</p></figcaption></figure>
 
-\
+\\
 
 ### Selecting Extension provider
 
