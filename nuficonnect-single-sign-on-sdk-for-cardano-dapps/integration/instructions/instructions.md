@@ -61,7 +61,7 @@ Its advisable to call it as soon as possible as it will also prefetch the Widget
 
 If no origin is passed to `init` it defaults to `https://wallet.nu.fi`.
 
-To customize Widget appearance (such as z-index, color mode, featured tokens, manual expand or collapse), please see [Widget options](broken-reference)
+To customize Widget appearance (such as z-index, color mode, featured tokens, manual expand or collapse), please see [Widget options](../common/widgetOptions.md)
 
 ### Initialize SSO login for Cardano
 
