@@ -103,6 +103,8 @@ const currentSSOInfo = nufiCoreSdk.onSocialLoginInfoChanged((data) => {
 })
 ```
 
+which is the preferred approach.
+
 Alternatively you can call:
 
 ```
@@ -110,6 +112,13 @@ import nufiCoreSdk from '@nufi/dapp-client-core'
 
 const currentSSOInfo = nufiCoreSdk.getSocialLoginInfo()
 ```
+
+which may however return `null` if you call it just before social login info is loaded.
+
+Therefore this method is not suitable for obtaining social login info immediately after
+connecting. Instead its more suited for reaching to social login info as a response to some
+user interaction when the info is already defined, without the need to store/read
+it from some other store.
 
 The returned data is either `null` or of the following type
 
@@ -120,6 +129,8 @@ export type SocialLoginInfo = {
   profileImage: string | null
   typeOfLogin: 'google' | 'discord' | 'facebook'
 } & Record<string, unknown>
+
+
 ```
 
 ### HideWidget
@@ -210,13 +221,13 @@ You can find the assets for the Login button [here](https://github.com/nufi-offi
 
 For seamless user navigation, it is recommended that the Login button be positioned in the top bar, to the left of the Wallet selection options.
 
-<figure><img src="images/button-position-1.png" alt=""><figcaption><p>Recommended button position</p></figcaption></figure>
+<figure><img src="./images/button-position-1.png" alt=""><figcaption><p>Recommended button position</p></figcaption></figure>
 
 If the DApp UI does not allow this, the Login button can be placed inside the Wallet selection options as the top option.
 
-<figure><img src="images/button-position-2.png" alt="" width="375"><figcaption><p>Login button inside Wallet options</p></figcaption></figure>
+<figure><img src="./images/button-position-2.png" alt="" width="375"><figcaption><p>Login button inside Wallet options</p></figcaption></figure>
 
-\\
+\
 
 ### Selecting Extension provider
 
