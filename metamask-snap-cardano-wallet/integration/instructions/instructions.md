@@ -83,6 +83,24 @@ nufiCoreSdk.isMetamaskInstalled().then((isMetamaskInstalled) => {
 })
 ```
 
+#### Known limitations
+
+On Firefox, the `nufiCoreSdk.isMetamaskInstalled()` method may always return `false` regardless of whether Metamask is installed or not. This is only relevant for dapps that use `script-src 'self'` as part of their Context Security Policy.
+For these cases we suggest to always provide users with the Metamask login option,
+as the NuFi Widget can handle Metamask detection correctly. Otherwise you can check specifically
+for Firefox by using:
+
+```
+function isFirefox() {
+  return (
+    document.documentElement !== undefined &&
+    'MozAppearance' in document?.documentElement?.style
+  )
+}
+```
+
+or a similar code.
+
 ### Initialize Snap login for Cardano
 
 ```
