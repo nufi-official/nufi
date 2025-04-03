@@ -22,7 +22,7 @@ NuFi still offers legacy support and also tries to inject itself into`window.eth
 
 
 
-### Solana
+### Solana / SVM
 
 NuFi's Solana connector can be integrated through the Solana Wallet Standard ([https://github.com/anza-xyz/wallet-standard](https://github.com/anza-xyz/wallet-standard)). More info [here](https://github.com/wallet-standard/wallet-standard).
 
