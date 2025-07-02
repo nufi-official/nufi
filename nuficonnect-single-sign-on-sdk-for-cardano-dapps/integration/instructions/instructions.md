@@ -172,7 +172,7 @@ yarn add @nufi/sso-button-react
 import nufiCoreSdk from '@nufi/dapp-client-core'
 import {initNufiDappCardanoSdk} from '@nufi/dapp-client-cardano'
 import {SsoButton} from '@nufi/sso-button-react'
-import '@nufi/sso-button-react/dist/style.css'
+import '@nufi/sso-button-react/style.css'
 
 // Logged in example
 <SsoButton
@@ -195,7 +195,7 @@ import '@nufi/sso-button-react/dist/style.css'
 import nufiCoreSdk from '@nufi/dapp-client-core'
 import {initNufiDappCardanoSdk} from '@nufi/dapp-client-cardano'
 import {SsoButton} from '@nufi/sso-button-react'
-import '@nufi/sso-button-react/dist/style.css'
+import '@nufi/sso-button-react/style.css'
 
 // Logged out example
 <SsoButton
