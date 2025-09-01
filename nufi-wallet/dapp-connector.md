@@ -6,7 +6,7 @@ NuFi offers several DApp connectors allowing it to interact with DApps across mu
 
 ### Cardano
 
-NuFi's Cardano connector implements the [CIP-30](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030) standard and the API should behave the same as Flint wallet's CIP-30 connector, except it's injected as `window.cardano.nufi`. More info at https://www.cardano-caniuse.io
+NuFi's Cardano connector implements the [CIP-30](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030) standard and the API should behave the same as Flint wallet's CIP-30 connector, except it's injected as `window.cardano.nufi`. More info at [https://www.cardano-caniuse.io](https://www.cardano-caniuse.io/).
 
 ### Ethereum / EVM
 
@@ -20,11 +20,13 @@ NuFi still supports [eip-5749](https://eips.ethereum.org/EIPS/eip-5749) standard
 
 NuFi still offers legacy support and also tries to inject itself into`window.ethereum,` but we discourage using this approach and rather move to eip-5749 proposal. Note that in that case, NuFi will not inject its API if it detects Metamask or other wallet injecting into the `window.ethereum` object, to avoid interference with these wallets. Therefore, in order to use NuFi's Ethereum connector you need to make sure that there are no other active Ethereum wallet extensions (i.e. they must be disabled/uninstalled). NuFi supports Ethereum and all EVM networks.
 
-
-
 ### Solana / SVM
 
 NuFi's Solana connector can be integrated through the Solana Wallet Standard ([https://github.com/anza-xyz/wallet-standard](https://github.com/anza-xyz/wallet-standard)). More info [here](https://github.com/wallet-standard/wallet-standard).
+
+### Bitcoin
+
+NuFi's Bitcoin connector implements the [sats-connect](https://docs.xverse.app/sats-connect/wallet-providers) standard and registers itself into the `window.btc_providers` global array, following the [WBIP-0004 standard](https://wbips.netlify.app/wbips/WBIP004). The API should behave the same as Xverse Bitcoin wallet connector, except it's injected as `window.nufiBitcoin`.
 
 ### Flow
 
