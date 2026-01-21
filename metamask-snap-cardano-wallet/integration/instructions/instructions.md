@@ -1,10 +1,12 @@
-<img src="./images/cardano_metamask.svg" alt="drawing" width="200"/>
-
 # Integration instructions
+
+![drawing](../../../.gitbook/assets/cardano_metamask.svg)
+
+## Integration instructions
 
 Integrates your DApp with the `Cardano Wallet` Metamask [snap](https://metamask.io/snaps/). This means that in order to log into your DApp, it is enough for the user to have Metamask installed, removing the need for having a Cardano-specific wallet set up.
 
-## Demo
+### Demo
 
 Example dapp with the current version of SDK is deployed [here](https://sdk-example.nu.fi/).
 
@@ -14,11 +16,11 @@ We recommend to check usage of `@nufi/dapp-client-core` and `@nufi/dapp-client-c
 
 The other changes made to this repository are specific to its example dapp, so we do not recommend focusing on them.
 
-## Migration
+### Migration
 
 If migrating from older version of SDK please take a look at [_migration docs_](../common/migrations.md).
 
-## Install packages
+### Install packages
 
 NPM
 
@@ -34,11 +36,11 @@ yarn add @nufi/dapp-client-core
 yarn add @nufi/dapp-client-cardano
 ```
 
-## Usage
+### Usage
 
 _Make sure that your app's Content Security Policy does not block the iframe that is injected by our SDK. For more info please check_ [_iframe injection docs_](../common/iframeInjection.md)_._
 
-### Initialize core SDK
+#### Initialize core SDK
 
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -67,7 +69,7 @@ For now please use the origin from the above example.
 
 To customize Widget appearance (such as z-index, color mode, featured tokens, manual expand or collapse), please see [Widget options](../common/widgetOptions.md)
 
-### Check whether user has Metamask installed
+#### Check whether user has Metamask installed
 
 Note that the Widget handles cases when users do not have Metamask installed. Therefore its fine to always show some "Login with MetaMask" button on your dapp.
 
@@ -83,12 +85,9 @@ nufiCoreSdk.isMetamaskInstalled().then((isMetamaskInstalled) => {
 })
 ```
 
-#### Known limitations
+**Known limitations**
 
-On Firefox, the `nufiCoreSdk.isMetamaskInstalled()` method may always return `false` regardless of whether Metamask is installed or not. This is only relevant for dapps that use `script-src 'self'` as part of their Context Security Policy.
-For these cases we suggest to always provide users with the Metamask login option,
-as the NuFi Widget can handle Metamask detection correctly. Otherwise you can check specifically
-for Firefox by using:
+On Firefox, the `nufiCoreSdk.isMetamaskInstalled()` method may always return `false` regardless of whether Metamask is installed or not. This is only relevant for dapps that use `script-src 'self'` as part of their Context Security Policy. For these cases we suggest to always provide users with the Metamask login option, as the NuFi Widget can handle Metamask detection correctly. Otherwise you can check specifically for Firefox by using:
 
 ```
 function isFirefox() {
@@ -101,7 +100,7 @@ function isFirefox() {
 
 or a similar code.
 
-### Initialize Snap login for Cardano
+#### Initialize Snap login for Cardano
 
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -116,7 +115,7 @@ The `initNufiDappCardanoSdk` will populate `window.cardano.nufiSnap` object whic
 
 See [multiple providers docs](../common/multipleProviders.md) to use `initNufiDappCardanoSdk` correctly, when supporting multiple providers.
 
-### HideWidget
+#### HideWidget
 
 ```
 import nufiCoreSdk from '@nufi/dapp-client-core'
@@ -127,20 +126,20 @@ widgetApi.hideWidget()
 
 Use this method to close the Widget in case user logs out using your dapp.
 
-### Show widget
+#### Show widget
 
 When calling CIP-30 `enable` method the Widget will be shown automatically.
 
 Therefore if you detect (possibly a flag in your localStorage) that users is logged in you can simply call the `enable` method to make the Widget visible.
 
-### Selecting Extension provider
+#### Selecting Extension provider
 
 For users with NuFi extension installed, there are no specific actions required. Simply access `window.cardano.nufi` from anywhere as it is not controlled by the NuFi Widget SDK.
 
-### Note on Cardano Collaterals
+#### Note on Cardano Collaterals
 
 If your Cardano DApp calls [getCollateral()](https://github.com/cardano-foundation/CIPs/blob/1006fed85a8346bff49aa10431ecf21e70dd4556/CIP-0030/README.md?plain=1#L282), for best UX please make sure to do so only when really needed, otherwise users may get needlessly prompted by the NuFi widget to set up a collateral even if they don't have to. Even better would be to use [CIP-40](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0040) which lets you use regular inputs as collateral, i.e. removes the need to request collateral explicitly from the wallet.
 
-## Icon
+### Icon
 
-As an icon for Metamask provider in your dapp, you can download this [svg](./images/cardano_metamask.svg).
+As an icon for Metamask provider in your dapp, you can download this [svg](images/cardano_metamask.svg).

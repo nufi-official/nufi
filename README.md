@@ -1,6 +1,6 @@
 # Introduction
 
-<div align="center"><img src="https://user-images.githubusercontent.com/4980147/196724563-43b703ed-461e-4759-9e09-12f023debfa3.png" alt=""></div>
+<figure><img src=".gitbook/assets/nufi-logo-positive.png" alt=""><figcaption></figcaption></figure>
 
 _A Web3 crypto wallet for Solana, Cardano, Ethereum, EVMs, SVMs and Flow._\
 \
