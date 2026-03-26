@@ -31,3 +31,7 @@ NuFi's Bitcoin connector implements the [sats-connect](https://docs.xverse.app/s
 ### Flow
 
 NuFi works with the official [fcl-js](https://github.com/onflow/fcl-js) SDK and is fully integrated with the [fcl-discovery](https://github.com/onflow/fcl-discovery) service. If you want to integrate NuFi directly, the parameters needed for that can be found [here](https://github.com/onflow/fcl-discovery/blob/812bff5b90343976835d17bc2d7810aac62d714d/data/services.json#L74).
+
+### Tron
+
+NuFi injects to DApps as TronLink (if TronLink not already installed). Check [TronLink docs](https://docs.tronlink.org/dapp/getting-started/) for reference.
