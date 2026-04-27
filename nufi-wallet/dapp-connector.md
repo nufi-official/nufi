@@ -34,4 +34,4 @@ NuFi works with the official [fcl-js](https://github.com/onflow/fcl-js) SDK and 
 
 ### Tron
 
-NuFi injects to DApps as TronLink (if TronLink not already installed). Check [TronLink docs](https://docs.tronlink.org/dapp/getting-started/) for reference.
+NuFi injects to DApps as TronLink (if TronLink not already installed). Check [TronLink docs](https://docs.tronlink.org/dapp/getting-started/) for reference. NUFI also supports [TIP-6963](https://github.com/tronprotocol/tips/issues/737) provider autodiscovery.
